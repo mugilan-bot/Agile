@@ -12,7 +12,7 @@ import {
   Layers,
   HelpCircle
 } from 'lucide-react';
-import { api } from '../services/api';
+import { api, API_BASE } from '../services/api';
 import { Cafeteria } from '../types';
 
 interface ReportsPageProps {
@@ -31,7 +31,7 @@ export const ReportsPage: React.FC<ReportsPageProps> = ({ selectedCafeteria }) =
 
   const loadPreview = () => {
     setLoading(true);
-    const url = `/api/reports/export?report_type=${reportType}&format_type=json${
+    const url = `${API_BASE}/reports/export?report_type=${reportType}&format_type=json${
       selectedCafeteria ? `&cafeteria_id=${selectedCafeteria}` : ''
     }`;
     fetch(url)
