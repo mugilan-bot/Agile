@@ -1,0 +1,39 @@
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+
+# Local databases & uploads
+*.db
+*.sqlite3
+foodflow.db
+data/raw_uploads/
+data/processed/processed_*.csv
+
+# Secrets & Environment variables
+.env
+.env.local
+*.pem
+*.key
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/

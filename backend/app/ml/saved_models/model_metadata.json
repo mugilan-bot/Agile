@@ -1,0 +1,34 @@
+{
+  "version_tag": "v1.0",
+  "algorithm": "RandomForestRegressor(n_estimators=100, max_depth=12)",
+  "trained_at": "2026-10-21T02:51:33.523864",
+  "train_samples_count": 4020,
+  "test_samples_count": 980,
+  "mae": 7.028,
+  "rmse": 11.588,
+  "r2": 0.9787,
+  "baseline_mae": 17.713,
+  "baseline_rmse": 29.227,
+  "baseline_r2": 0.8642,
+  "numerical_features": [
+    "expected_customer_count",
+    "recent_avg_demand",
+    "historical_food_demand",
+    "temperature_c",
+    "is_weekend",
+    "is_holiday",
+    "is_special_event"
+  ],
+  "categorical_features": [
+    "cafeteria_id",
+    "food_item_id",
+    "food_category",
+    "day_of_week",
+    "weather_condition"
+  ],
+  "target_column": "actual_demand",
+  "artifact_file": "demand_model_v1.0.joblib",
+  "split_strategy": "Chronological (80% train / 20% test)",
+  "evaluation_notes": "Evaluated on 980 held-out future records. Genuine test MAE is 7.028 units.",
+  "is_active": true
+}

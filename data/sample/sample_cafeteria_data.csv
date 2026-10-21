@@ -1,0 +1,501 @@
+record_id,date,cafeteria_id,food_item_id,food_name,food_category,day_of_week,is_weekend,is_holiday,is_special_event,weather_condition,temperature_c,expected_customer_count,historical_customer_count,recent_avg_demand,historical_food_demand,planned_preparation_qty,actual_prepared_qty,actual_demand,actual_consumption,leftover_qty,wasted_qty,unit,unit_cost,total_waste_cost,is_synthetic,source
+SYN-000001,2025-09-01,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Cloudy,20.8,990,977,128.4,128.4,141.6,143.5,128.4,128.4,15.1,2.7,kg,1.8,4.86,1,synthetic
+SYN-000002,2025-09-01,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Cloudy,20.8,990,996,107.5,107.5,119.6,120.4,107.5,107.5,12.9,4.1,kg,2.2,9.02,1,synthetic
+SYN-000003,2025-09-01,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Cloudy,20.8,990,946,61.2,61.2,68.9,67.1,61.2,61.2,5.9,2.2,kg,3.5,7.7,1,synthetic
+SYN-000004,2025-09-01,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Cloudy,20.8,990,990,161.8,161.8,181.1,177.5,161.8,161.8,15.7,4.9,kg,6.5,31.85,1,synthetic
+SYN-000005,2025-09-01,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Cloudy,20.8,990,948,68.8,68.8,75.0,73.5,68.8,68.8,4.7,2.6,kg,3.8,9.88,1,synthetic
+SYN-000006,2025-09-01,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Cloudy,20.8,990,1023,107.7,107.7,120.9,125.2,107.7,107.7,17.5,5.5,kg,8.0,44.0,1,synthetic
+SYN-000007,2025-09-01,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Cloudy,20.8,990,956,87.1,87.1,95.1,96.5,87.1,87.1,9.4,3.0,liters,2.9,8.7,1,synthetic
+SYN-000008,2025-09-01,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Cloudy,20.8,990,1036,77.3,77.3,87.6,91.1,77.3,77.3,13.8,6.2,liters,2.4,14.88,1,synthetic
+SYN-000009,2025-09-01,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Cloudy,20.8,990,992,67.9,67.9,76.0,79.0,67.9,67.9,11.1,5.5,liters,2.1,11.55,1,synthetic
+SYN-000010,2025-09-01,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Cloudy,20.8,990,962,65.2,65.2,71.5,72.1,65.2,65.2,6.9,4.6,kg,3.2,14.72,1,synthetic
+SYN-000011,2025-09-01,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Cloudy,20.8,990,987,54.9,54.9,59.6,61.6,54.9,54.9,6.7,3.0,kg,3.6,10.8,1,synthetic
+SYN-000012,2025-09-01,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Cloudy,20.8,990,959,95.4,95.4,108.7,111.1,95.4,95.4,15.7,3.3,kg,2.6,8.58,1,synthetic
+SYN-000013,2025-09-01,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Cloudy,20.8,990,953,85.7,85.7,92.6,90.7,85.7,85.7,5.0,2.1,kg,2.0,4.2,1,synthetic
+SYN-000014,2025-09-01,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Cloudy,20.8,990,981,467.7,467.7,532.4,530.9,467.7,467.7,63.2,23.7,portions,0.6,14.22,1,synthetic
+SYN-000015,2025-09-01,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Cloudy,20.8,990,965,335.3,335.3,381.9,383.8,335.3,335.3,48.5,15.7,portions,0.85,13.34,1,synthetic
+SYN-000016,2025-09-01,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Cloudy,20.8,693,698,87.7,87.7,95.9,97.5,87.7,87.7,9.8,2.1,kg,1.8,3.78,1,synthetic
+SYN-000017,2025-09-01,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Cloudy,20.8,693,707,68.0,68.0,74.3,75.2,68.0,68.0,7.2,1.8,kg,2.2,3.96,1,synthetic
+SYN-000018,2025-09-01,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Cloudy,20.8,693,658,36.6,36.6,40.1,41.2,36.6,36.6,4.6,0.8,kg,3.5,2.8,1,synthetic
+SYN-000019,2025-09-01,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Cloudy,20.8,693,681,109.0,109.0,124.1,127.5,109.0,109.0,18.5,4.5,kg,6.5,29.25,1,synthetic
+SYN-000020,2025-09-01,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Cloudy,20.8,693,681,58.0,58.0,64.5,67.0,58.0,58.0,9.0,3.0,kg,3.8,11.4,1,synthetic
+SYN-000021,2025-09-01,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Cloudy,20.8,693,714,81.5,81.5,90.0,88.8,81.5,81.5,7.3,2.8,kg,8.0,22.4,1,synthetic
+SYN-000022,2025-09-01,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Cloudy,20.8,693,673,55.6,55.6,62.2,60.6,55.6,55.6,5.0,2.7,liters,2.9,7.83,1,synthetic
+SYN-000023,2025-09-01,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Cloudy,20.8,693,695,64.2,64.2,70.0,72.5,64.2,64.2,8.3,4.8,liters,2.4,11.52,1,synthetic
+SYN-000024,2025-09-01,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Cloudy,20.8,693,709,53.1,53.1,58.6,57.2,53.1,53.1,4.1,1.4,liters,2.1,2.94,1,synthetic
+SYN-000025,2025-09-01,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Cloudy,20.8,693,711,47.4,47.4,51.7,50.5,47.4,47.4,3.1,1.9,kg,3.2,6.08,1,synthetic
+SYN-000026,2025-09-01,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Cloudy,20.8,693,712,42.4,42.4,48.0,49.8,42.4,42.4,7.4,2.0,kg,3.6,7.2,1,synthetic
+SYN-000027,2025-09-01,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Cloudy,20.8,693,694,62.9,62.9,70.7,69.4,62.9,62.9,6.5,1.5,kg,2.6,3.9,1,synthetic
+SYN-000028,2025-09-01,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Cloudy,20.8,693,703,56.7,56.7,63.0,63.9,56.7,56.7,7.2,3.2,kg,2.0,6.4,1,synthetic
+SYN-000029,2025-09-01,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Cloudy,20.8,693,701,307.1,307.1,348.8,356.0,307.1,307.1,48.9,21.1,portions,0.6,12.66,1,synthetic
+SYN-000030,2025-09-01,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Cloudy,20.8,693,684,224.7,224.7,251.8,247.9,224.7,224.7,23.2,8.6,portions,0.85,7.31,1,synthetic
+SYN-000031,2025-09-01,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Cloudy,20.8,613,628,84.1,84.1,91.2,93.8,84.1,84.1,9.7,2.9,kg,1.8,5.22,1,synthetic
+SYN-000032,2025-09-01,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Cloudy,20.8,613,583,64.0,64.0,72.1,73.6,64.0,64.0,9.6,3.0,kg,2.2,6.6,1,synthetic
+SYN-000033,2025-09-01,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Cloudy,20.8,613,639,39.5,39.5,44.2,45.5,39.5,39.5,6.0,2.5,kg,3.5,8.75,1,synthetic
+SYN-000034,2025-09-01,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Cloudy,20.8,613,619,81.6,81.6,91.7,93.0,81.6,81.6,11.4,2.7,kg,6.5,17.55,1,synthetic
+SYN-000035,2025-09-01,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Cloudy,20.8,613,612,48.2,48.2,52.1,53.1,48.2,48.2,4.9,1.7,kg,3.8,6.46,1,synthetic
+SYN-000036,2025-09-01,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Cloudy,20.8,613,616,76.5,76.5,83.3,85.7,76.5,76.5,9.2,1.9,kg,8.0,15.2,1,synthetic
+SYN-000037,2025-09-01,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Cloudy,20.8,613,616,56.4,56.4,62.9,62.8,56.4,56.4,6.4,2.9,liters,2.9,8.41,1,synthetic
+SYN-000038,2025-09-01,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Cloudy,20.8,613,582,56.3,56.3,61.4,61.4,56.3,56.3,5.1,3.4,liters,2.4,8.16,1,synthetic
+SYN-000039,2025-09-01,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Cloudy,20.8,613,621,46.9,46.9,52.9,53.1,46.9,46.9,6.2,3.2,liters,2.1,6.72,1,synthetic
+SYN-000040,2025-09-01,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Cloudy,20.8,613,638,40.8,40.8,45.9,47.1,40.8,40.8,6.3,2.2,kg,3.2,7.04,1,synthetic
+SYN-000041,2025-09-01,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Cloudy,20.8,613,599,34.4,34.4,39.1,40.3,34.4,34.4,5.9,2.6,kg,3.6,9.36,1,synthetic
+SYN-000042,2025-09-01,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Cloudy,20.8,613,637,56.4,56.4,61.4,62.4,56.4,56.4,6.0,3.2,kg,2.6,8.32,1,synthetic
+SYN-000043,2025-09-01,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Cloudy,20.8,613,610,56.8,56.8,61.6,62.2,56.8,56.8,5.4,1.7,kg,2.0,3.4,1,synthetic
+SYN-000044,2025-09-01,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Cloudy,20.8,613,598,317.4,317.4,354.2,350.9,317.4,317.4,33.5,8.5,portions,0.6,5.1,1,synthetic
+SYN-000045,2025-09-01,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Cloudy,20.8,613,595,213.0,213.0,236.8,237.8,213.0,213.0,24.8,8.8,portions,0.85,7.48,1,synthetic
+SYN-000046,2025-09-01,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Cloudy,20.8,562,542,61.7,61.7,67.1,68.2,61.7,61.7,6.5,1.4,kg,1.8,2.52,1,synthetic
+SYN-000047,2025-09-01,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Cloudy,20.8,562,534,49.3,49.3,55.1,54.4,49.3,49.3,5.1,1.8,kg,2.2,3.96,1,synthetic
+SYN-000048,2025-09-01,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Cloudy,20.8,562,574,37.2,37.2,42.3,42.0,37.2,37.2,4.8,2.0,kg,3.5,7.0,1,synthetic
+SYN-000049,2025-09-01,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Cloudy,20.8,562,559,83.4,83.4,92.4,91.9,83.4,83.4,8.5,4.6,kg,6.5,29.9,1,synthetic
+SYN-000050,2025-09-01,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Cloudy,20.8,562,560,43.5,43.5,47.5,47.3,43.5,43.5,3.8,0.8,kg,3.8,3.04,1,synthetic
+SYN-000051,2025-09-01,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Cloudy,20.8,562,543,60.8,60.8,66.7,65.4,60.8,60.8,4.6,1.2,kg,8.0,9.6,1,synthetic
+SYN-000052,2025-09-01,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Cloudy,20.8,562,551,51.3,51.3,58.1,57.8,51.3,51.3,6.5,1.5,liters,2.9,4.35,1,synthetic
+SYN-000053,2025-09-01,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Cloudy,20.8,562,578,46.3,46.3,52.6,54.6,46.3,46.3,8.3,5.3,liters,2.4,12.72,1,synthetic
+SYN-000054,2025-09-01,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Cloudy,20.8,562,558,39.6,39.6,45.0,43.9,39.6,39.6,4.3,2.3,liters,2.1,4.83,1,synthetic
+SYN-000055,2025-09-01,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Cloudy,20.8,562,539,39.5,39.5,43.8,44.7,39.5,39.5,5.2,2.5,kg,3.2,8.0,1,synthetic
+SYN-000056,2025-09-01,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Cloudy,20.8,562,588,30.2,30.2,33.5,33.5,30.2,30.2,3.3,1.4,kg,3.6,5.04,1,synthetic
+SYN-000057,2025-09-01,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Cloudy,20.8,562,573,44.8,44.8,48.5,48.9,44.8,44.8,4.1,1.5,kg,2.6,3.9,1,synthetic
+SYN-000058,2025-09-01,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Cloudy,20.8,562,588,40.0,40.0,45.5,46.6,40.0,40.0,6.6,3.1,kg,2.0,6.2,1,synthetic
+SYN-000059,2025-09-01,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Cloudy,20.8,562,554,255.8,255.8,286.2,295.0,255.8,255.8,39.2,8.6,portions,0.6,5.16,1,synthetic
+SYN-000060,2025-09-01,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Cloudy,20.8,562,569,172.6,172.6,192.7,195.7,172.6,172.6,23.1,7.8,portions,0.85,6.63,1,synthetic
+SYN-000061,2025-09-02,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Sunny,27.8,1220,1275,128.4,128.4,141.3,144.9,143.8,143.8,1.1,0.4,kg,1.8,0.72,1,synthetic
+SYN-000062,2025-09-02,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Sunny,27.8,1220,1209,107.5,107.5,117.8,116.5,136.6,116.5,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000063,2025-09-02,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Sunny,27.8,1220,1267,61.2,61.2,68.9,71.6,73.7,71.6,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000064,2025-09-02,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Sunny,27.8,1220,1188,161.8,161.8,176.9,173.2,170.7,170.7,2.5,0.8,kg,6.5,5.2,1,synthetic
+SYN-000065,2025-09-02,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Sunny,27.8,1220,1191,68.8,68.8,75.6,73.5,107.4,73.5,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000066,2025-09-02,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Tuesday,0,0,0,Sunny,27.8,1220,1268,107.7,107.7,120.1,120.3,144.3,120.3,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000067,2025-09-02,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Tuesday,0,0,0,Sunny,27.8,1220,1192,87.1,87.1,99.2,96.7,118.6,96.7,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000068,2025-09-02,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Tuesday,0,0,0,Sunny,27.8,1220,1239,77.3,77.3,86.0,84.8,92.7,84.8,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000069,2025-09-02,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Tuesday,0,0,0,Sunny,27.8,1220,1261,67.9,67.9,76.2,77.9,93.1,77.9,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000070,2025-09-02,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Tuesday,0,0,0,Sunny,27.8,1220,1218,65.2,65.2,73.7,71.5,107.3,71.5,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000071,2025-09-02,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Tuesday,0,0,0,Sunny,27.8,1220,1225,54.9,54.9,60.4,62.0,98.0,62.0,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000072,2025-09-02,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Tuesday,0,0,0,Sunny,27.8,1220,1215,95.4,95.4,108.2,105.9,106.5,105.9,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000073,2025-09-02,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Tuesday,0,0,0,Sunny,27.8,1220,1177,85.7,85.7,93.0,96.6,107.2,96.6,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000074,2025-09-02,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Tuesday,0,0,0,Sunny,27.8,1220,1279,467.7,467.7,525.5,536.3,562.7,536.3,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000075,2025-09-02,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Tuesday,0,0,0,Sunny,27.8,1220,1208,335.3,335.3,364.4,376.3,485.3,376.3,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000076,2025-09-02,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Sunny,27.8,765,729,87.7,87.7,95.2,94.1,86.9,86.9,7.2,1.4,kg,1.8,2.52,1,synthetic
+SYN-000077,2025-09-02,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Sunny,27.8,765,777,68.0,68.0,75.7,77.0,76.1,76.1,0.9,0.2,kg,2.2,0.44,1,synthetic
+SYN-000078,2025-09-02,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Sunny,27.8,765,779,36.6,36.6,41.2,41.2,44.0,41.2,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000079,2025-09-02,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Sunny,27.8,765,758,109.0,109.0,124.2,122.8,110.5,110.5,12.3,3.3,kg,6.5,21.45,1,synthetic
+SYN-000080,2025-09-02,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Sunny,27.8,765,761,58.0,58.0,64.1,64.5,66.7,64.5,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000081,2025-09-02,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Tuesday,0,0,0,Sunny,27.8,765,778,81.5,81.5,91.8,95.2,92.8,92.8,2.4,0.9,kg,8.0,7.2,1,synthetic
+SYN-000082,2025-09-02,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Tuesday,0,0,0,Sunny,27.8,765,771,55.6,55.6,63.1,62.3,70.7,62.3,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000083,2025-09-02,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Tuesday,0,0,0,Sunny,27.8,765,760,64.2,64.2,69.7,71.7,57.1,57.1,14.6,7.2,liters,2.4,17.28,1,synthetic
+SYN-000084,2025-09-02,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Tuesday,0,0,0,Sunny,27.8,765,801,53.1,53.1,59.4,60.8,52.9,52.9,7.9,5.2,liters,2.1,10.92,1,synthetic
+SYN-000085,2025-09-02,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Tuesday,0,0,0,Sunny,27.8,765,795,47.4,47.4,51.8,53.5,64.3,53.5,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000086,2025-09-02,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Tuesday,0,0,0,Sunny,27.8,765,766,42.4,42.4,46.0,46.4,54.9,46.4,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000087,2025-09-02,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Tuesday,0,0,0,Sunny,27.8,765,745,62.9,62.9,70.2,72.4,71.0,71.0,1.4,0.3,kg,2.6,0.78,1,synthetic
+SYN-000088,2025-09-02,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Tuesday,0,0,0,Sunny,27.8,765,741,56.7,56.7,61.7,64.0,61.2,61.2,2.8,1.1,kg,2.0,2.2,1,synthetic
+SYN-000089,2025-09-02,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Tuesday,0,0,0,Sunny,27.8,765,757,307.1,307.1,340.1,338.0,336.2,336.2,1.8,0.6,portions,0.6,0.36,1,synthetic
+SYN-000090,2025-09-02,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Tuesday,0,0,0,Sunny,27.8,765,790,224.7,224.7,249.9,251.9,263.1,251.9,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000091,2025-09-02,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Sunny,27.8,671,662,84.1,84.1,91.4,93.0,72.6,72.6,20.4,8.5,kg,1.8,15.3,1,synthetic
+SYN-000092,2025-09-02,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Sunny,27.8,671,659,64.0,64.0,69.8,68.1,64.6,64.6,3.5,0.8,kg,2.2,1.76,1,synthetic
+SYN-000093,2025-09-02,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Sunny,27.8,671,693,39.5,39.5,43.9,44.6,32.7,32.7,11.9,3.0,kg,3.5,10.5,1,synthetic
+SYN-000094,2025-09-02,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Sunny,27.8,671,671,81.6,81.6,90.7,89.8,92.6,89.8,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000095,2025-09-02,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Sunny,27.8,671,650,48.2,48.2,53.7,55.6,46.0,46.0,9.6,3.6,kg,3.8,13.68,1,synthetic
+SYN-000096,2025-09-02,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Tuesday,0,0,0,Sunny,27.8,671,681,76.5,76.5,85.9,84.0,73.5,73.5,10.5,2.2,kg,8.0,17.6,1,synthetic
+SYN-000097,2025-09-02,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Tuesday,0,0,0,Sunny,27.8,671,675,56.4,56.4,64.0,64.8,58.3,58.3,6.5,2.2,liters,2.9,6.38,1,synthetic
+SYN-000098,2025-09-02,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Tuesday,0,0,0,Sunny,27.8,671,688,56.3,56.3,62.2,63.9,49.1,49.1,14.8,10.3,liters,2.4,24.72,1,synthetic
+SYN-000099,2025-09-02,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Tuesday,0,0,0,Sunny,27.8,671,694,46.9,46.9,50.8,51.5,43.8,43.8,7.7,2.1,liters,2.1,4.41,1,synthetic
+SYN-000100,2025-09-02,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Tuesday,0,0,0,Sunny,27.8,671,674,40.8,40.8,45.2,45.5,58.3,45.5,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000101,2025-09-02,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Tuesday,0,0,0,Sunny,27.8,671,659,34.4,34.4,38.1,38.1,47.4,38.1,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000102,2025-09-02,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Tuesday,0,0,0,Sunny,27.8,671,637,56.4,56.4,63.4,63.6,58.2,58.2,5.4,1.9,kg,2.6,4.94,1,synthetic
+SYN-000103,2025-09-02,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Tuesday,0,0,0,Sunny,27.8,671,661,56.8,56.8,64.6,66.1,49.9,49.9,16.2,6.5,kg,2.0,13.0,1,synthetic
+SYN-000104,2025-09-02,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Tuesday,0,0,0,Sunny,27.8,671,639,317.4,317.4,353.3,348.9,270.7,270.7,78.2,26.2,portions,0.6,15.72,1,synthetic
+SYN-000105,2025-09-02,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Tuesday,0,0,0,Sunny,27.8,671,651,213.0,213.0,235.1,230.2,227.3,227.3,2.9,1.2,portions,0.85,1.02,1,synthetic
+SYN-000106,2025-09-02,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Sunny,27.8,546,558,61.7,61.7,68.9,68.2,63.7,63.7,4.5,1.2,kg,1.8,2.16,1,synthetic
+SYN-000107,2025-09-02,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Sunny,27.8,546,545,49.3,49.3,53.3,54.7,54.6,54.6,0.1,0.0,kg,2.2,0.0,1,synthetic
+SYN-000108,2025-09-02,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Sunny,27.8,546,538,37.2,37.2,41.4,41.7,31.1,31.1,10.6,3.7,kg,3.5,12.95,1,synthetic
+SYN-000109,2025-09-02,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Sunny,27.8,546,535,83.4,83.4,93.4,95.9,79.8,79.8,16.1,8.0,kg,6.5,52.0,1,synthetic
+SYN-000110,2025-09-02,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Sunny,27.8,546,557,43.5,43.5,48.2,47.1,44.1,44.1,3.0,1.0,kg,3.8,3.8,1,synthetic
+SYN-000111,2025-09-02,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Tuesday,0,0,0,Sunny,27.8,546,531,60.8,60.8,68.8,66.9,61.0,61.0,5.9,1.8,kg,8.0,14.4,1,synthetic
+SYN-000112,2025-09-02,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Tuesday,0,0,0,Sunny,27.8,546,533,51.3,51.3,56.7,58.4,47.5,47.5,10.9,4.2,liters,2.9,12.18,1,synthetic
+SYN-000113,2025-09-02,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Tuesday,0,0,0,Sunny,27.8,546,526,46.3,46.3,51.0,51.2,41.6,41.6,9.6,4.1,liters,2.4,9.84,1,synthetic
+SYN-000114,2025-09-02,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Tuesday,0,0,0,Sunny,27.8,546,529,39.6,39.6,43.1,43.7,37.7,37.7,6.0,1.7,liters,2.1,3.57,1,synthetic
+SYN-000115,2025-09-02,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Tuesday,0,0,0,Sunny,27.8,546,526,39.5,39.5,44.3,45.8,53.3,45.8,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000116,2025-09-02,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Tuesday,0,0,0,Sunny,27.8,546,550,30.2,30.2,34.3,35.1,38.9,35.1,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000117,2025-09-02,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Tuesday,0,0,0,Sunny,27.8,546,523,44.8,44.8,48.9,49.3,53.5,49.3,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000118,2025-09-02,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Tuesday,0,0,0,Sunny,27.8,546,566,40.0,40.0,44.1,44.0,46.0,44.0,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000119,2025-09-02,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Tuesday,0,0,0,Sunny,27.8,546,555,255.8,255.8,290.5,298.8,246.1,246.1,52.7,18.5,portions,0.6,11.1,1,synthetic
+SYN-000120,2025-09-02,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Tuesday,0,0,0,Sunny,27.8,546,540,172.6,172.6,188.2,193.8,185.4,185.4,8.4,2.0,portions,0.85,1.7,1,synthetic
+SYN-000121,2025-09-03,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Wednesday,0,0,0,Sunny,30.0,1216,1185,136.1,136.1,150.8,149.3,146.3,146.3,3.0,0.9,kg,1.8,1.62,1,synthetic
+SYN-000122,2025-09-03,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Wednesday,0,0,0,Sunny,30.0,1216,1246,122.0,122.0,134.8,133.7,116.1,116.1,17.6,3.9,kg,2.2,8.58,1,synthetic
+SYN-000123,2025-09-03,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Wednesday,0,0,0,Sunny,30.0,1216,1253,67.5,67.5,74.3,76.8,73.5,73.5,3.3,0.8,kg,3.5,2.8,1,synthetic
+SYN-000124,2025-09-03,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Wednesday,0,0,0,Sunny,30.0,1216,1232,166.2,166.2,183.6,185.2,160.3,160.3,24.9,5.7,kg,6.5,37.05,1,synthetic
+SYN-000125,2025-09-03,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Wednesday,0,0,0,Sunny,30.0,1216,1180,88.1,88.1,98.7,101.9,99.2,99.2,2.7,0.6,kg,3.8,2.28,1,synthetic
+SYN-000126,2025-09-03,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Wednesday,0,0,0,Sunny,30.0,1216,1271,126.0,126.0,139.3,144.5,134.8,134.8,9.7,3.7,kg,8.0,29.6,1,synthetic
+SYN-000127,2025-09-03,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Wednesday,0,0,0,Sunny,30.0,1216,1162,102.8,102.8,115.0,113.0,97.4,97.4,15.6,6.3,liters,2.9,18.27,1,synthetic
+SYN-000128,2025-09-03,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Wednesday,0,0,0,Sunny,30.0,1216,1271,85.0,85.0,94.7,98.3,98.7,98.3,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000129,2025-09-03,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Wednesday,0,0,0,Sunny,30.0,1216,1225,80.5,80.5,87.5,90.1,90.4,90.1,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000130,2025-09-03,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Wednesday,0,0,0,Sunny,30.0,1216,1274,86.2,86.2,97.2,99.7,95.4,95.4,4.3,2.6,kg,3.2,8.32,1,synthetic
+SYN-000131,2025-09-03,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Wednesday,0,0,0,Sunny,30.0,1216,1207,76.5,76.5,84.4,84.2,96.4,84.2,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000132,2025-09-03,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Wednesday,0,0,0,Sunny,30.0,1216,1226,101.0,101.0,112.9,113.6,96.5,96.5,17.1,9.4,kg,2.6,24.44,1,synthetic
+SYN-000133,2025-09-03,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Wednesday,0,0,0,Sunny,30.0,1216,1169,96.5,96.5,105.4,109.4,86.8,86.8,22.6,5.8,kg,2.0,11.6,1,synthetic
+SYN-000134,2025-09-03,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Wednesday,0,0,0,Sunny,30.0,1216,1248,515.2,515.2,565.9,553.9,559.1,553.9,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000135,2025-09-03,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Wednesday,0,0,0,Sunny,30.0,1216,1224,410.3,410.3,455.0,466.4,442.7,442.7,23.7,10.3,portions,0.85,8.76,1,synthetic
+SYN-000136,2025-09-03,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Wednesday,0,0,0,Sunny,30.0,819,859,87.3,87.3,98.8,100.3,116.8,100.3,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000137,2025-09-03,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Wednesday,0,0,0,Sunny,30.0,819,780,72.0,72.0,81.1,83.1,89.9,83.1,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000138,2025-09-03,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Wednesday,0,0,0,Sunny,30.0,819,810,40.3,40.3,45.4,46.9,59.1,46.9,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000139,2025-09-03,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Wednesday,0,0,0,Sunny,30.0,819,804,109.8,109.8,123.8,120.6,119.3,119.3,1.3,0.3,kg,6.5,1.95,1,synthetic
+SYN-000140,2025-09-03,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Wednesday,0,0,0,Sunny,30.0,819,785,62.4,62.4,67.4,69.0,60.0,60.0,9.0,3.4,kg,3.8,12.92,1,synthetic
+SYN-000141,2025-09-03,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Wednesday,0,0,0,Sunny,30.0,819,839,87.2,87.2,94.8,96.3,99.2,96.3,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000142,2025-09-03,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Wednesday,0,0,0,Sunny,30.0,819,859,63.2,63.2,70.1,70.8,80.1,70.8,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000143,2025-09-03,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Wednesday,0,0,0,Sunny,30.0,819,797,60.7,60.7,66.5,68.8,66.6,66.6,2.2,0.8,liters,2.4,1.92,1,synthetic
+SYN-000144,2025-09-03,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Wednesday,0,0,0,Sunny,30.0,819,792,53.0,53.0,58.6,57.0,64.3,57.0,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000145,2025-09-03,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Wednesday,0,0,0,Sunny,30.0,819,844,55.8,55.8,60.5,62.7,69.4,62.7,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000146,2025-09-03,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Wednesday,0,0,0,Sunny,30.0,819,830,48.6,48.6,53.8,55.7,59.7,55.7,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000147,2025-09-03,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Wednesday,0,0,0,Sunny,30.0,819,829,67.0,67.0,75.1,73.1,86.9,73.1,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000148,2025-09-03,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Wednesday,0,0,0,Sunny,30.0,819,834,59.0,59.0,64.9,63.3,71.4,63.3,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000149,2025-09-03,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Wednesday,0,0,0,Sunny,30.0,819,789,321.6,321.6,363.8,355.6,376.2,355.6,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000150,2025-09-03,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Wednesday,0,0,0,Sunny,30.0,819,800,243.9,243.9,268.4,268.8,300.1,268.8,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000151,2025-09-03,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Wednesday,0,0,0,Sunny,30.0,692,677,78.3,78.3,84.6,87.4,85.2,85.2,2.2,0.4,kg,1.8,0.72,1,synthetic
+SYN-000152,2025-09-03,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Wednesday,0,0,0,Sunny,30.0,692,716,64.3,64.3,69.7,70.7,75.2,70.7,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000153,2025-09-03,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Wednesday,0,0,0,Sunny,30.0,692,683,36.1,36.1,39.4,38.5,38.5,38.5,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000154,2025-09-03,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Wednesday,0,0,0,Sunny,30.0,692,672,87.1,87.1,95.8,95.8,98.2,95.8,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000155,2025-09-03,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Wednesday,0,0,0,Sunny,30.0,692,666,47.1,47.1,52.3,52.8,64.2,52.8,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000156,2025-09-03,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Wednesday,0,0,0,Sunny,30.0,692,723,75.0,75.0,84.3,87.5,81.5,81.5,6.0,2.3,kg,8.0,18.4,1,synthetic
+SYN-000157,2025-09-03,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Wednesday,0,0,0,Sunny,30.0,692,691,57.3,57.3,64.4,63.2,67.1,63.2,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000158,2025-09-03,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Wednesday,0,0,0,Sunny,30.0,692,669,52.7,52.7,59.8,59.8,55.9,55.9,3.9,2.3,liters,2.4,5.52,1,synthetic
+SYN-000159,2025-09-03,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Wednesday,0,0,0,Sunny,30.0,692,657,45.3,45.3,50.8,51.9,52.9,51.9,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000160,2025-09-03,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Wednesday,0,0,0,Sunny,30.0,692,688,49.5,49.5,55.7,57.2,58.8,57.2,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000161,2025-09-03,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Wednesday,0,0,0,Sunny,30.0,692,670,40.9,40.9,44.8,43.9,50.4,43.9,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000162,2025-09-03,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Wednesday,0,0,0,Sunny,30.0,692,665,57.3,57.3,62.8,64.2,66.5,64.2,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000163,2025-09-03,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Wednesday,0,0,0,Sunny,30.0,692,700,53.3,53.3,57.8,58.8,50.1,50.1,8.7,1.8,kg,2.0,3.6,1,synthetic
+SYN-000164,2025-09-03,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Wednesday,0,0,0,Sunny,30.0,692,709,294.0,294.0,333.0,340.4,342.9,340.4,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000165,2025-09-03,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Wednesday,0,0,0,Sunny,30.0,692,664,220.2,220.2,238.1,234.2,268.5,234.2,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000166,2025-09-03,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Wednesday,0,0,0,Sunny,30.0,593,605,62.7,62.7,69.0,71.5,71.2,71.2,0.3,0.1,kg,1.8,0.18,1,synthetic
+SYN-000167,2025-09-03,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Wednesday,0,0,0,Sunny,30.0,593,567,52.0,52.0,56.3,58.4,65.0,58.4,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000168,2025-09-03,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Wednesday,0,0,0,Sunny,30.0,593,619,34.2,34.2,37.3,36.9,38.2,36.9,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000169,2025-09-03,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Wednesday,0,0,0,Sunny,30.0,593,596,81.6,81.6,90.7,92.7,81.5,81.5,11.2,5.0,kg,6.5,32.5,1,synthetic
+SYN-000170,2025-09-03,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Wednesday,0,0,0,Sunny,30.0,593,613,43.8,43.8,49.8,49.4,49.9,49.4,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000171,2025-09-03,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Wednesday,0,0,0,Sunny,30.0,593,591,60.9,60.9,67.0,65.7,76.0,65.7,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000172,2025-09-03,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Wednesday,0,0,0,Sunny,30.0,593,616,49.4,49.4,55.0,54.2,53.7,53.7,0.5,0.2,liters,2.9,0.58,1,synthetic
+SYN-000173,2025-09-03,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Wednesday,0,0,0,Sunny,30.0,593,566,44.0,44.0,49.2,48.7,46.2,46.2,2.5,1.7,liters,2.4,4.08,1,synthetic
+SYN-000174,2025-09-03,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Wednesday,0,0,0,Sunny,30.0,593,600,38.7,38.7,43.5,44.0,42.3,42.3,1.7,1.2,liters,2.1,2.52,1,synthetic
+SYN-000175,2025-09-03,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Wednesday,0,0,0,Sunny,30.0,593,586,46.4,46.4,51.2,51.1,49.2,49.2,1.9,1.0,kg,3.2,3.2,1,synthetic
+SYN-000176,2025-09-03,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Wednesday,0,0,0,Sunny,30.0,593,610,34.5,34.5,39.2,38.6,43.7,38.6,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000177,2025-09-03,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Wednesday,0,0,0,Sunny,30.0,593,584,49.1,49.1,53.9,52.8,51.0,51.0,1.8,0.4,kg,2.6,1.04,1,synthetic
+SYN-000178,2025-09-03,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Wednesday,0,0,0,Sunny,30.0,593,611,43.0,43.0,47.6,46.3,48.9,46.3,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000179,2025-09-03,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Wednesday,0,0,0,Sunny,30.0,593,573,250.9,250.9,283.6,279.7,263.9,263.9,15.8,3.3,portions,0.6,1.98,1,synthetic
+SYN-000180,2025-09-03,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Wednesday,0,0,0,Sunny,30.0,593,608,179.0,179.0,199.2,198.8,212.3,198.8,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000181,2025-09-04,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Thursday,0,0,0,Cloudy,21.0,1101,1103,139.5,139.5,155.8,155.9,135.8,135.8,20.1,5.4,kg,1.8,9.72,1,synthetic
+SYN-000182,2025-09-04,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Thursday,0,0,0,Cloudy,21.0,1101,1074,120.1,120.1,136.9,136.1,117.7,117.7,18.4,6.5,kg,2.2,14.3,1,synthetic
+SYN-000183,2025-09-04,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Thursday,0,0,0,Cloudy,21.0,1101,1098,69.5,69.5,75.8,77.2,69.0,69.0,8.2,1.9,kg,3.5,6.65,1,synthetic
+SYN-000184,2025-09-04,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Thursday,0,0,0,Cloudy,21.0,1101,1068,164.3,164.3,182.8,183.0,152.7,152.7,30.3,14.7,kg,6.5,95.55,1,synthetic
+SYN-000185,2025-09-04,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Thursday,0,0,0,Cloudy,21.0,1101,1105,91.8,91.8,99.7,97.6,83.9,83.9,13.7,6.9,kg,3.8,26.22,1,synthetic
+SYN-000186,2025-09-04,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Thursday,0,0,0,Cloudy,21.0,1101,1091,128.9,128.9,140.9,145.8,130.9,130.9,14.9,4.3,kg,8.0,34.4,1,synthetic
+SYN-000187,2025-09-04,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Thursday,0,0,0,Cloudy,21.0,1101,1052,101.0,101.0,111.5,109.1,100.7,100.7,8.4,4.1,liters,2.9,11.89,1,synthetic
+SYN-000188,2025-09-04,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Thursday,0,0,0,Cloudy,21.0,1101,1079,89.6,89.6,99.3,102.2,85.1,85.1,17.1,9.1,liters,2.4,21.84,1,synthetic
+SYN-000189,2025-09-04,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Thursday,0,0,0,Cloudy,21.0,1101,1096,83.8,83.8,90.8,92.6,82.8,82.8,9.8,3.7,liters,2.1,7.77,1,synthetic
+SYN-000190,2025-09-04,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Thursday,0,0,0,Cloudy,21.0,1101,1152,89.3,89.3,97.1,96.6,86.5,86.5,10.1,4.7,kg,3.2,15.04,1,synthetic
+SYN-000191,2025-09-04,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Thursday,0,0,0,Cloudy,21.0,1101,1047,83.1,83.1,92.4,95.3,65.6,65.6,29.7,16.7,kg,3.6,60.12,1,synthetic
+SYN-000192,2025-09-04,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Thursday,0,0,0,Cloudy,21.0,1101,1108,99.5,99.5,112.6,114.1,94.1,94.1,20.0,4.3,kg,2.6,11.18,1,synthetic
+SYN-000193,2025-09-04,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Thursday,0,0,0,Cloudy,21.0,1101,1075,93.2,93.2,103.4,106.0,87.6,87.6,18.4,8.7,kg,2.0,17.4,1,synthetic
+SYN-000194,2025-09-04,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Thursday,0,0,0,Cloudy,21.0,1101,1100,529.8,529.8,602.4,606.1,547.6,547.6,58.5,10.3,portions,0.6,6.18,1,synthetic
+SYN-000195,2025-09-04,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Thursday,0,0,0,Cloudy,21.0,1101,1110,421.1,421.1,475.9,493.6,416.9,416.9,76.7,15.9,portions,0.85,13.52,1,synthetic
+SYN-000196,2025-09-04,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Thursday,0,0,0,Cloudy,21.0,751,745,97.1,97.1,106.9,104.4,102.3,102.3,2.1,0.7,kg,1.8,1.26,1,synthetic
+SYN-000197,2025-09-04,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Thursday,0,0,0,Cloudy,21.0,751,769,78.0,78.0,86.1,83.6,93.7,83.6,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000198,2025-09-04,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Thursday,0,0,0,Cloudy,21.0,751,746,46.6,46.6,51.5,51.4,47.6,47.6,3.8,1.1,kg,3.5,3.85,1,synthetic
+SYN-000199,2025-09-04,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Thursday,0,0,0,Cloudy,21.0,751,786,112.9,112.9,128.2,132.7,107.3,107.3,25.4,7.8,kg,6.5,50.7,1,synthetic
+SYN-000200,2025-09-04,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Thursday,0,0,0,Cloudy,21.0,751,763,61.6,61.6,68.7,69.4,54.5,54.5,14.9,7.4,kg,3.8,28.12,1,synthetic
+SYN-000201,2025-09-04,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Thursday,0,0,0,Cloudy,21.0,751,777,91.2,91.2,99.0,102.0,94.8,94.8,7.2,3.7,kg,8.0,29.6,1,synthetic
+SYN-000202,2025-09-04,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Thursday,0,0,0,Cloudy,21.0,751,715,68.8,68.8,78.1,77.5,70.5,70.5,7.0,3.7,liters,2.9,10.73,1,synthetic
+SYN-000203,2025-09-04,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Thursday,0,0,0,Cloudy,21.0,751,714,62.6,62.6,69.6,70.5,65.5,65.5,5.0,1.9,liters,2.4,4.56,1,synthetic
+SYN-000204,2025-09-04,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Thursday,0,0,0,Cloudy,21.0,751,778,56.8,56.8,63.0,63.7,54.5,54.5,9.2,2.5,liters,2.1,5.25,1,synthetic
+SYN-000205,2025-09-04,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Thursday,0,0,0,Cloudy,21.0,751,778,60.4,60.4,66.8,66.4,54.4,54.4,12.0,4.1,kg,3.2,13.12,1,synthetic
+SYN-000206,2025-09-04,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Thursday,0,0,0,Cloudy,21.0,751,746,52.3,52.3,57.4,58.2,50.4,50.4,7.8,4.6,kg,3.6,16.56,1,synthetic
+SYN-000207,2025-09-04,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Thursday,0,0,0,Cloudy,21.0,751,744,73.6,73.6,81.2,80.9,69.5,69.5,11.4,4.5,kg,2.6,11.7,1,synthetic
+SYN-000208,2025-09-04,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Thursday,0,0,0,Cloudy,21.0,751,775,63.1,63.1,69.5,71.0,62.8,62.8,8.2,3.0,kg,2.0,6.0,1,synthetic
+SYN-000209,2025-09-04,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Thursday,0,0,0,Cloudy,21.0,751,734,339.8,339.8,373.5,382.2,335.8,335.8,46.4,7.8,portions,0.6,4.68,1,synthetic
+SYN-000210,2025-09-04,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Thursday,0,0,0,Cloudy,21.0,751,779,262.6,262.6,288.0,284.9,307.6,284.9,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000211,2025-09-04,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Thursday,0,0,0,Cloudy,21.0,708,732,80.6,80.6,88.3,87.3,74.0,74.0,13.3,2.2,kg,1.8,3.96,1,synthetic
+SYN-000212,2025-09-04,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Thursday,0,0,0,Cloudy,21.0,708,704,67.9,67.9,76.6,75.0,71.1,71.1,3.9,1.5,kg,2.2,3.3,1,synthetic
+SYN-000213,2025-09-04,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Thursday,0,0,0,Cloudy,21.0,708,725,36.9,36.9,40.5,41.8,46.3,41.8,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000214,2025-09-04,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Thursday,0,0,0,Cloudy,21.0,708,728,90.8,90.8,102.6,100.9,93.7,93.7,7.2,2.7,kg,6.5,17.55,1,synthetic
+SYN-000215,2025-09-04,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Thursday,0,0,0,Cloudy,21.0,708,698,52.8,52.8,57.2,57.8,54.3,54.3,3.5,1.5,kg,3.8,5.7,1,synthetic
+SYN-000216,2025-09-04,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Thursday,0,0,0,Cloudy,21.0,708,735,77.2,77.2,85.0,83.8,69.3,69.3,14.5,7.2,kg,8.0,57.6,1,synthetic
+SYN-000217,2025-09-04,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Thursday,0,0,0,Cloudy,21.0,708,696,60.6,60.6,65.8,64.9,64.5,64.5,0.4,0.2,liters,2.9,0.58,1,synthetic
+SYN-000218,2025-09-04,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Thursday,0,0,0,Cloudy,21.0,708,721,53.8,53.8,60.3,60.7,55.5,55.5,5.2,3.3,liters,2.4,7.92,1,synthetic
+SYN-000219,2025-09-04,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Thursday,0,0,0,Cloudy,21.0,708,705,47.9,47.9,53.6,52.6,44.6,44.6,8.0,2.8,liters,2.1,5.88,1,synthetic
+SYN-000220,2025-09-04,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Thursday,0,0,0,Cloudy,21.0,708,742,52.6,52.6,57.7,57.3,50.3,50.3,7.0,3.6,kg,3.2,11.52,1,synthetic
+SYN-000221,2025-09-04,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Thursday,0,0,0,Cloudy,21.0,708,717,44.1,44.1,48.1,48.5,43.1,43.1,5.4,3.5,kg,3.6,12.6,1,synthetic
+SYN-000222,2025-09-04,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Thursday,0,0,0,Cloudy,21.0,708,719,60.4,60.4,68.2,67.8,62.4,62.4,5.4,1.6,kg,2.6,4.16,1,synthetic
+SYN-000223,2025-09-04,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Thursday,0,0,0,Cloudy,21.0,708,678,52.3,52.3,59.5,60.8,56.7,56.7,4.1,1.1,kg,2.0,2.2,1,synthetic
+SYN-000224,2025-09-04,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Thursday,0,0,0,Cloudy,21.0,708,738,310.3,310.3,345.5,353.4,284.1,284.1,69.3,28.8,portions,0.6,17.28,1,synthetic
+SYN-000225,2025-09-04,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Thursday,0,0,0,Cloudy,21.0,708,720,236.3,236.3,260.9,257.5,236.0,236.0,21.5,9.0,portions,0.85,7.65,1,synthetic
+SYN-000226,2025-09-04,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Thursday,0,0,0,Cloudy,21.0,542,554,65.5,65.5,74.3,72.1,66.5,66.5,5.6,1.3,kg,1.8,2.34,1,synthetic
+SYN-000227,2025-09-04,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Thursday,0,0,0,Cloudy,21.0,542,557,56.3,56.3,61.8,62.9,62.8,62.8,0.1,0.0,kg,2.2,0.0,1,synthetic
+SYN-000228,2025-09-04,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Thursday,0,0,0,Cloudy,21.0,542,568,35.5,35.5,38.3,38.5,35.2,35.2,3.3,0.8,kg,3.5,2.8,1,synthetic
+SYN-000229,2025-09-04,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Thursday,0,0,0,Cloudy,21.0,542,538,81.6,81.6,92.7,93.0,81.0,81.0,12.0,3.9,kg,6.5,25.35,1,synthetic
+SYN-000230,2025-09-04,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Thursday,0,0,0,Cloudy,21.0,542,522,45.8,45.8,50.4,49.0,47.8,47.8,1.2,0.3,kg,3.8,1.14,1,synthetic
+SYN-000231,2025-09-04,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Thursday,0,0,0,Cloudy,21.0,542,516,65.9,65.9,71.6,72.7,61.8,61.8,10.9,3.7,kg,8.0,29.6,1,synthetic
+SYN-000232,2025-09-04,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Thursday,0,0,0,Cloudy,21.0,542,540,50.8,50.8,57.5,56.4,50.1,50.1,6.3,2.8,liters,2.9,8.12,1,synthetic
+SYN-000233,2025-09-04,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Thursday,0,0,0,Cloudy,21.0,542,528,44.7,44.7,48.5,48.0,43.9,43.9,4.1,2.6,liters,2.4,6.24,1,synthetic
+SYN-000234,2025-09-04,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Thursday,0,0,0,Cloudy,21.0,542,560,39.9,39.9,43.3,44.4,42.0,42.0,2.4,0.8,liters,2.1,1.68,1,synthetic
+SYN-000235,2025-09-04,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Thursday,0,0,0,Cloudy,21.0,542,557,47.3,47.3,52.7,53.8,37.5,37.5,16.3,6.7,kg,3.2,21.44,1,synthetic
+SYN-000236,2025-09-04,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Thursday,0,0,0,Cloudy,21.0,542,527,37.6,37.6,42.2,43.7,29.2,29.2,14.5,9.1,kg,3.6,32.76,1,synthetic
+SYN-000237,2025-09-04,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Thursday,0,0,0,Cloudy,21.0,542,532,49.8,49.8,54.7,56.7,50.9,50.9,5.8,2.0,kg,2.6,5.2,1,synthetic
+SYN-000238,2025-09-04,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Thursday,0,0,0,Cloudy,21.0,542,552,45.0,45.0,50.6,51.8,47.8,47.8,4.0,1.3,kg,2.0,2.6,1,synthetic
+SYN-000239,2025-09-04,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Thursday,0,0,0,Cloudy,21.0,542,531,255.3,255.3,285.0,295.1,250.8,250.8,44.3,19.0,portions,0.6,11.4,1,synthetic
+SYN-000240,2025-09-04,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Thursday,0,0,0,Cloudy,21.0,542,560,190.1,190.1,209.8,208.9,201.5,201.5,7.4,3.1,portions,0.85,2.63,1,synthetic
+SYN-000241,2025-09-05,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Friday,0,1,0,Rainy,18.9,286,296,138.6,138.6,157.1,153.1,41.7,41.7,111.4,42.6,kg,1.8,76.68,1,synthetic
+SYN-000242,2025-09-05,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Friday,0,1,0,Rainy,18.9,286,291,119.5,119.5,134.2,132.8,35.4,35.4,97.4,32.3,kg,2.2,71.06,1,synthetic
+SYN-000243,2025-09-05,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Friday,0,1,0,Rainy,18.9,286,294,69.3,69.3,76.5,75.3,20.2,20.2,55.1,15.3,kg,3.5,53.55,1,synthetic
+SYN-000244,2025-09-05,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Friday,0,1,0,Rainy,18.9,286,273,161.4,161.4,175.6,177.0,37.0,37.0,140.0,67.1,kg,6.5,436.15,1,synthetic
+SYN-000245,2025-09-05,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Friday,0,1,0,Rainy,18.9,286,295,89.8,89.8,99.4,97.6,21.2,21.2,76.4,29.2,kg,3.8,110.96,1,synthetic
+SYN-000246,2025-09-05,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Friday,0,1,0,Rainy,18.9,286,293,129.4,129.4,140.4,139.5,27.4,27.4,112.1,47.4,kg,8.0,379.2,1,synthetic
+SYN-000247,2025-09-05,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Friday,0,1,0,Rainy,18.9,286,278,101.0,101.0,114.2,112.7,28.0,28.0,84.7,18.2,liters,2.9,52.78,1,synthetic
+SYN-000248,2025-09-05,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Friday,0,1,0,Rainy,18.9,286,286,88.4,88.4,97.1,99.6,26.3,26.3,73.3,20.6,liters,2.4,49.44,1,synthetic
+SYN-000249,2025-09-05,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Friday,0,1,0,Rainy,18.9,286,281,83.5,83.5,90.9,88.9,26.4,26.4,62.5,36.6,liters,2.1,76.86,1,synthetic
+SYN-000250,2025-09-05,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Friday,0,1,0,Rainy,18.9,286,276,88.6,88.6,97.5,98.5,21.7,21.7,76.8,30.2,kg,3.2,96.64,1,synthetic
+SYN-000251,2025-09-05,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Friday,0,1,0,Rainy,18.9,286,291,78.7,78.7,87.8,90.7,19.2,19.2,71.5,44.8,kg,3.6,161.28,1,synthetic
+SYN-000252,2025-09-05,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Friday,0,1,0,Rainy,18.9,286,288,98.1,98.1,108.9,109.0,24.7,24.7,84.3,20.4,kg,2.6,53.04,1,synthetic
+SYN-000253,2025-09-05,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Friday,0,1,0,Rainy,18.9,286,293,91.8,91.8,103.2,105.1,21.9,21.9,83.2,19.6,kg,2.0,39.2,1,synthetic
+SYN-000254,2025-09-05,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Friday,0,1,0,Rainy,18.9,286,291,534.3,534.3,606.8,593.9,124.8,124.8,469.1,152.8,portions,0.6,91.68,1,synthetic
+SYN-000255,2025-09-05,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Friday,0,1,0,Rainy,18.9,286,297,420.0,420.0,474.9,485.2,91.9,91.9,393.3,144.2,portions,0.85,122.57,1,synthetic
+SYN-000256,2025-09-05,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Friday,0,1,0,Rainy,18.9,217,223,98.4,98.4,108.6,112.4,32.7,32.7,79.7,20.0,kg,1.8,36.0,1,synthetic
+SYN-000257,2025-09-05,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Friday,0,1,0,Rainy,18.9,217,217,81.9,81.9,89.3,87.9,23.6,23.6,64.3,18.7,kg,2.2,41.14,1,synthetic
+SYN-000258,2025-09-05,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Friday,0,1,0,Rainy,18.9,217,225,46.8,46.8,52.6,51.3,18.0,18.0,33.3,12.6,kg,3.5,44.1,1,synthetic
+SYN-000259,2025-09-05,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Friday,0,1,0,Rainy,18.9,217,212,111.5,111.5,124.1,120.4,27.1,27.1,93.3,49.4,kg,6.5,321.1,1,synthetic
+SYN-000260,2025-09-05,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Friday,0,1,0,Rainy,18.9,217,215,59.8,59.8,67.8,65.8,17.6,17.6,48.2,18.8,kg,3.8,71.44,1,synthetic
+SYN-000261,2025-09-05,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Friday,0,1,0,Rainy,18.9,217,224,92.1,92.1,102.1,105.7,20.7,20.7,85.0,27.9,kg,8.0,223.2,1,synthetic
+SYN-000262,2025-09-05,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Friday,0,1,0,Rainy,18.9,217,207,69.2,69.2,75.3,76.4,18.5,18.5,57.9,30.7,liters,2.9,89.03,1,synthetic
+SYN-000263,2025-09-05,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Friday,0,1,0,Rainy,18.9,217,208,63.4,63.4,71.9,71.8,20.4,20.4,51.4,34.2,liters,2.4,82.08,1,synthetic
+SYN-000264,2025-09-05,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Friday,0,1,0,Rainy,18.9,217,216,56.2,56.2,60.9,62.7,20.3,20.3,42.4,21.1,liters,2.1,44.31,1,synthetic
+SYN-000265,2025-09-05,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Friday,0,1,0,Rainy,18.9,217,215,58.9,58.9,64.4,63.4,16.2,16.2,47.2,27.8,kg,3.2,88.96,1,synthetic
+SYN-000266,2025-09-05,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Friday,0,1,0,Rainy,18.9,217,225,51.9,51.9,58.9,60.9,12.2,12.2,48.7,25.7,kg,3.6,92.52,1,synthetic
+SYN-000267,2025-09-05,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Friday,0,1,0,Rainy,18.9,217,225,72.6,72.6,82.4,82.8,18.3,18.3,64.5,20.6,kg,2.6,53.56,1,synthetic
+SYN-000268,2025-09-05,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Friday,0,1,0,Rainy,18.9,217,206,63.0,63.0,69.5,68.0,17.0,17.0,51.0,25.1,kg,2.0,50.2,1,synthetic
+SYN-000269,2025-09-05,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Friday,0,1,0,Rainy,18.9,217,206,338.8,338.8,366.4,376.9,96.6,96.6,280.3,63.1,portions,0.6,37.86,1,synthetic
+SYN-000270,2025-09-05,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Friday,0,1,0,Rainy,18.9,217,216,273.9,273.9,300.0,310.0,74.1,74.1,235.9,55.8,portions,0.85,47.43,1,synthetic
+SYN-000271,2025-09-05,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Friday,0,1,0,Rainy,18.9,166,158,79.0,79.0,85.9,83.7,23.3,23.3,60.4,16.7,kg,1.8,30.06,1,synthetic
+SYN-000272,2025-09-05,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Friday,0,1,0,Rainy,18.9,166,162,68.7,68.7,74.7,76.8,18.4,18.4,58.4,18.4,kg,2.2,40.48,1,synthetic
+SYN-000273,2025-09-05,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Friday,0,1,0,Rainy,18.9,166,161,39.2,39.2,42.7,43.1,8.3,8.3,34.8,12.7,kg,3.5,44.45,1,synthetic
+SYN-000274,2025-09-05,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Friday,0,1,0,Rainy,18.9,166,168,91.5,91.5,101.4,104.6,23.3,23.3,81.3,33.7,kg,6.5,219.05,1,synthetic
+SYN-000275,2025-09-05,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Friday,0,1,0,Rainy,18.9,166,159,53.2,53.2,57.7,59.6,14.8,14.8,44.8,9.9,kg,3.8,37.62,1,synthetic
+SYN-000276,2025-09-05,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Friday,0,1,0,Rainy,18.9,166,172,75.2,75.2,82.8,84.2,16.1,16.1,68.1,30.9,kg,8.0,247.2,1,synthetic
+SYN-000277,2025-09-05,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Friday,0,1,0,Rainy,18.9,166,171,61.6,61.6,66.9,67.8,16.6,16.6,51.2,22.3,liters,2.9,64.67,1,synthetic
+SYN-000278,2025-09-05,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Friday,0,1,0,Rainy,18.9,166,168,54.2,54.2,61.7,60.5,17.5,17.5,43.0,24.7,liters,2.4,59.28,1,synthetic
+SYN-000279,2025-09-05,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Friday,0,1,0,Rainy,18.9,166,162,47.0,47.0,51.2,52.3,13.6,13.6,38.7,11.8,liters,2.1,24.78,1,synthetic
+SYN-000280,2025-09-05,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Friday,0,1,0,Rainy,18.9,166,159,52.0,52.0,58.3,57.9,10.3,10.3,47.6,14.9,kg,3.2,47.68,1,synthetic
+SYN-000281,2025-09-05,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Friday,0,1,0,Rainy,18.9,166,167,43.8,43.8,47.9,49.0,9.0,9.0,40.0,17.9,kg,3.6,64.44,1,synthetic
+SYN-000282,2025-09-05,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Friday,0,1,0,Rainy,18.9,166,171,60.9,60.9,67.3,69.0,14.2,14.2,54.8,25.3,kg,2.6,65.78,1,synthetic
+SYN-000283,2025-09-05,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Friday,0,1,0,Rainy,18.9,166,163,53.4,53.4,60.2,60.2,8.8,8.8,51.4,23.9,kg,2.0,47.8,1,synthetic
+SYN-000284,2025-09-05,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Friday,0,1,0,Rainy,18.9,166,161,303.8,303.8,344.2,356.7,72.6,72.6,284.1,102.0,portions,0.6,61.2,1,synthetic
+SYN-000285,2025-09-05,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Friday,0,1,0,Rainy,18.9,166,164,236.2,236.2,257.9,268.1,57.1,57.1,211.0,92.0,portions,0.85,78.2,1,synthetic
+SYN-000286,2025-09-05,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Friday,0,1,0,Rainy,18.9,139,135,65.8,65.8,73.6,73.1,21.0,21.0,52.1,13.3,kg,1.8,23.94,1,synthetic
+SYN-000287,2025-09-05,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Friday,0,1,0,Rainy,18.9,139,137,57.9,57.9,64.4,65.4,16.3,16.3,49.1,15.1,kg,2.2,33.22,1,synthetic
+SYN-000288,2025-09-05,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Friday,0,1,0,Rainy,18.9,139,139,35.4,35.4,38.4,39.0,8.2,8.2,30.8,11.2,kg,3.5,39.2,1,synthetic
+SYN-000289,2025-09-05,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Friday,0,1,0,Rainy,18.9,139,132,81.4,81.4,90.3,88.0,22.0,22.0,66.0,17.3,kg,6.5,112.45,1,synthetic
+SYN-000290,2025-09-05,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Friday,0,1,0,Rainy,18.9,139,135,46.3,46.3,50.6,49.9,10.5,10.5,39.4,14.1,kg,3.8,53.58,1,synthetic
+SYN-000291,2025-09-05,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Friday,0,1,0,Rainy,18.9,139,134,64.9,64.9,73.3,73.8,17.5,17.5,56.3,24.9,kg,8.0,199.2,1,synthetic
+SYN-000292,2025-09-05,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Friday,0,1,0,Rainy,18.9,139,135,50.6,50.6,56.3,54.8,12.3,12.3,42.5,9.9,liters,2.9,28.71,1,synthetic
+SYN-000293,2025-09-05,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Friday,0,1,0,Rainy,18.9,139,138,44.5,44.5,49.0,47.7,16.0,16.0,31.7,14.5,liters,2.4,34.8,1,synthetic
+SYN-000294,2025-09-05,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Friday,0,1,0,Rainy,18.9,139,135,40.4,40.4,44.7,44.7,10.0,10.0,34.7,12.6,liters,2.1,26.46,1,synthetic
+SYN-000295,2025-09-05,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Friday,0,1,0,Rainy,18.9,139,139,44.9,44.9,49.8,51.3,10.5,10.5,40.8,16.1,kg,3.2,51.52,1,synthetic
+SYN-000296,2025-09-05,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Friday,0,1,0,Rainy,18.9,139,144,35.5,35.5,39.2,39.5,7.3,7.3,32.2,14.4,kg,3.6,51.84,1,synthetic
+SYN-000297,2025-09-05,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Friday,0,1,0,Rainy,18.9,139,134,50.1,50.1,54.6,55.8,11.4,11.4,44.4,15.4,kg,2.6,40.04,1,synthetic
+SYN-000298,2025-09-05,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Friday,0,1,0,Rainy,18.9,139,138,45.7,45.7,51.2,51.4,8.2,8.2,43.2,21.4,kg,2.0,42.8,1,synthetic
+SYN-000299,2025-09-05,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Friday,0,1,0,Rainy,18.9,139,141,254.1,254.1,283.3,292.0,67.7,67.7,224.3,92.9,portions,0.6,55.74,1,synthetic
+SYN-000300,2025-09-05,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Friday,0,1,0,Rainy,18.9,139,134,192.9,192.9,210.2,212.4,44.8,44.8,167.6,71.2,portions,0.85,60.52,1,synthetic
+SYN-000301,2025-09-06,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Saturday,1,0,0,Cold,5.4,402,383,119.2,119.2,134.5,131.8,55.1,55.1,76.7,30.8,kg,1.8,55.44,1,synthetic
+SYN-000302,2025-09-06,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Saturday,1,0,0,Cold,5.4,402,399,102.7,102.7,112.0,115.3,53.0,53.0,62.3,19.6,kg,2.2,43.12,1,synthetic
+SYN-000303,2025-09-06,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Saturday,1,0,0,Cold,5.4,402,394,59.5,59.5,66.2,64.4,30.3,30.3,34.1,11.7,kg,3.5,40.95,1,synthetic
+SYN-000304,2025-09-06,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Saturday,1,0,0,Cold,5.4,402,396,136.5,136.5,154.5,153.0,57.9,57.9,95.1,39.1,kg,6.5,254.15,1,synthetic
+SYN-000305,2025-09-06,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Saturday,1,0,0,Cold,5.4,402,419,76.1,76.1,83.8,81.6,29.0,29.0,52.6,21.7,kg,3.8,82.46,1,synthetic
+SYN-000306,2025-09-06,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Saturday,1,0,0,Cold,5.4,402,418,109.0,109.0,118.4,117.3,44.4,44.4,72.9,39.8,kg,8.0,318.4,1,synthetic
+SYN-000307,2025-09-06,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Saturday,1,0,0,Cold,5.4,402,418,86.4,86.4,93.4,93.1,35.9,35.9,57.2,18.2,liters,2.9,52.78,1,synthetic
+SYN-000308,2025-09-06,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Saturday,1,0,0,Cold,5.4,402,412,76.0,76.0,84.0,86.1,35.5,35.5,50.6,25.2,liters,2.4,60.48,1,synthetic
+SYN-000309,2025-09-06,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Saturday,1,0,0,Cold,5.4,402,382,72.1,72.1,81.5,81.4,36.1,36.1,45.3,23.5,liters,2.1,49.35,1,synthetic
+SYN-000310,2025-09-06,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Saturday,1,0,0,Cold,5.4,402,413,75.2,75.2,83.7,82.6,22.4,22.4,60.2,35.1,kg,3.2,112.32,1,synthetic
+SYN-000311,2025-09-06,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Saturday,1,0,0,Cold,5.4,402,409,66.8,66.8,73.6,75.7,18.8,18.8,56.9,15.7,kg,3.6,56.52,1,synthetic
+SYN-000312,2025-09-06,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Saturday,1,0,0,Cold,5.4,402,408,83.4,83.4,91.4,88.8,33.5,33.5,55.3,26.9,kg,2.6,69.94,1,synthetic
+SYN-000313,2025-09-06,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Saturday,1,0,0,Cold,5.4,402,385,77.8,77.8,87.4,90.3,29.5,29.5,60.8,14.5,kg,2.0,29.0,1,synthetic
+SYN-000314,2025-09-06,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Saturday,1,0,0,Cold,5.4,402,388,452.4,452.4,490.4,505.2,186.0,186.0,319.2,137.7,portions,0.6,82.62,1,synthetic
+SYN-000315,2025-09-06,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Saturday,1,0,0,Cold,5.4,402,402,354.4,354.4,391.7,381.2,123.2,123.2,258.0,77.9,portions,0.85,66.22,1,synthetic
+SYN-000316,2025-09-06,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Saturday,1,0,0,Cold,5.4,256,247,85.3,85.3,93.9,92.0,39.5,39.5,52.5,17.4,kg,1.8,31.32,1,synthetic
+SYN-000317,2025-09-06,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Saturday,1,0,0,Cold,5.4,256,247,70.3,70.3,78.8,80.6,31.4,31.4,49.2,13.0,kg,2.2,28.6,1,synthetic
+SYN-000318,2025-09-06,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Saturday,1,0,0,Cold,5.4,256,252,41.1,41.1,44.6,45.1,20.9,20.9,24.2,6.6,kg,3.5,23.1,1,synthetic
+SYN-000319,2025-09-06,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Saturday,1,0,0,Cold,5.4,256,245,94.6,94.6,102.7,104.0,39.6,39.6,64.4,25.8,kg,6.5,167.7,1,synthetic
+SYN-000320,2025-09-06,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Saturday,1,0,0,Cold,5.4,256,264,51.4,51.4,58.5,60.6,20.8,20.8,39.8,9.8,kg,3.8,37.24,1,synthetic
+SYN-000321,2025-09-06,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Saturday,1,0,0,Cold,5.4,256,267,77.8,77.8,85.2,83.8,29.2,29.2,54.6,23.7,kg,8.0,189.6,1,synthetic
+SYN-000322,2025-09-06,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Saturday,1,0,0,Cold,5.4,256,255,59.1,59.1,64.3,62.6,27.4,27.4,35.2,16.5,liters,2.9,47.85,1,synthetic
+SYN-000323,2025-09-06,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Saturday,1,0,0,Cold,5.4,256,253,54.8,54.8,62.1,63.3,27.6,27.6,35.7,12.3,liters,2.4,29.52,1,synthetic
+SYN-000324,2025-09-06,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Saturday,1,0,0,Cold,5.4,256,250,49.0,49.0,54.2,52.6,22.6,22.6,30.0,18.0,liters,2.1,37.8,1,synthetic
+SYN-000325,2025-09-06,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Saturday,1,0,0,Cold,5.4,256,253,50.3,50.3,56.0,55.8,14.7,14.7,41.1,13.9,kg,3.2,44.48,1,synthetic
+SYN-000326,2025-09-06,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Saturday,1,0,0,Cold,5.4,256,268,43.9,43.9,48.1,48.8,13.0,13.0,35.8,12.2,kg,3.6,43.92,1,synthetic
+SYN-000327,2025-09-06,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Saturday,1,0,0,Cold,5.4,256,251,61.7,61.7,69.4,71.8,21.6,21.6,50.2,19.8,kg,2.6,51.48,1,synthetic
+SYN-000328,2025-09-06,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Saturday,1,0,0,Cold,5.4,256,258,53.8,53.8,59.8,59.4,19.6,19.6,39.8,17.8,kg,2.0,35.6,1,synthetic
+SYN-000329,2025-09-06,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Saturday,1,0,0,Cold,5.4,256,265,290.4,290.4,330.9,336.4,121.6,121.6,214.8,44.5,portions,0.6,26.7,1,synthetic
+SYN-000330,2025-09-06,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Saturday,1,0,0,Cold,5.4,256,257,233.9,233.9,264.2,256.3,99.4,99.4,156.9,61.4,portions,0.85,52.19,1,synthetic
+SYN-000331,2025-09-06,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Saturday,1,0,0,Cold,5.4,226,221,67.8,67.8,75.9,75.7,29.1,29.1,46.6,11.6,kg,1.8,20.88,1,synthetic
+SYN-000332,2025-09-06,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Saturday,1,0,0,Cold,5.4,226,236,58.7,58.7,65.6,67.2,24.9,24.9,42.3,11.4,kg,2.2,25.08,1,synthetic
+SYN-000333,2025-09-06,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Saturday,1,0,0,Cold,5.4,226,235,33.1,33.1,36.6,37.8,13.8,13.8,24.0,9.5,kg,3.5,33.25,1,synthetic
+SYN-000334,2025-09-06,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Saturday,1,0,0,Cold,5.4,226,219,77.9,77.9,87.5,86.9,33.7,33.7,53.2,14.9,kg,6.5,96.85,1,synthetic
+SYN-000335,2025-09-06,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Saturday,1,0,0,Cold,5.4,226,223,45.5,45.5,51.5,52.5,18.2,18.2,34.3,12.8,kg,3.8,48.64,1,synthetic
+SYN-000336,2025-09-06,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Saturday,1,0,0,Cold,5.4,226,220,63.4,63.4,71.8,72.7,26.1,26.1,46.6,25.1,kg,8.0,200.8,1,synthetic
+SYN-000337,2025-09-06,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Saturday,1,0,0,Cold,5.4,226,222,52.6,52.6,57.2,58.5,19.9,19.9,38.6,20.5,liters,2.9,59.45,1,synthetic
+SYN-000338,2025-09-06,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Saturday,1,0,0,Cold,5.4,226,235,46.9,46.9,52.6,52.7,22.1,22.1,30.6,20.7,liters,2.4,49.68,1,synthetic
+SYN-000339,2025-09-06,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Saturday,1,0,0,Cold,5.4,226,225,40.4,40.4,45.6,46.0,19.5,19.5,26.5,10.9,liters,2.1,22.89,1,synthetic
+SYN-000340,2025-09-06,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Saturday,1,0,0,Cold,5.4,226,235,43.7,43.7,49.2,50.1,13.6,13.6,36.5,10.3,kg,3.2,32.96,1,synthetic
+SYN-000341,2025-09-06,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Saturday,1,0,0,Cold,5.4,226,216,36.9,36.9,40.6,41.4,10.2,10.2,31.2,16.2,kg,3.6,58.32,1,synthetic
+SYN-000342,2025-09-06,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Saturday,1,0,0,Cold,5.4,226,222,51.5,51.5,57.3,57.3,20.3,20.3,37.0,10.0,kg,2.6,26.0,1,synthetic
+SYN-000343,2025-09-06,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Saturday,1,0,0,Cold,5.4,226,215,44.5,44.5,49.8,51.5,15.3,15.3,36.2,19.7,kg,2.0,39.4,1,synthetic
+SYN-000344,2025-09-06,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Saturday,1,0,0,Cold,5.4,226,231,257.5,257.5,289.2,297.8,97.6,97.6,200.2,85.5,portions,0.6,51.3,1,synthetic
+SYN-000345,2025-09-06,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Saturday,1,0,0,Cold,5.4,226,232,200.4,200.4,227.6,224.7,79.2,79.2,145.5,60.1,portions,0.85,51.09,1,synthetic
+SYN-000346,2025-09-06,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Saturday,1,0,0,Cold,5.4,211,215,56.8,56.8,63.9,62.0,31.5,31.5,30.5,7.5,kg,1.8,13.5,1,synthetic
+SYN-000347,2025-09-06,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Saturday,1,0,0,Cold,5.4,211,218,49.6,49.6,54.1,53.1,27.9,27.9,25.2,7.5,kg,2.2,16.5,1,synthetic
+SYN-000348,2025-09-06,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Saturday,1,0,0,Cold,5.4,211,209,30.0,30.0,32.9,33.7,15.8,15.8,17.9,6.5,kg,3.5,22.75,1,synthetic
+SYN-000349,2025-09-06,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Saturday,1,0,0,Cold,5.4,211,206,69.5,69.5,76.5,78.9,26.9,26.9,52.0,24.1,kg,6.5,156.65,1,synthetic
+SYN-000350,2025-09-06,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Saturday,1,0,0,Cold,5.4,211,211,39.2,39.2,44.5,45.6,15.8,15.8,29.8,11.0,kg,3.8,41.8,1,synthetic
+SYN-000351,2025-09-06,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Saturday,1,0,0,Cold,5.4,211,213,55.4,55.4,62.0,60.6,25.3,25.3,35.3,16.2,kg,8.0,129.6,1,synthetic
+SYN-000352,2025-09-06,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Saturday,1,0,0,Cold,5.4,211,200,43.0,43.0,47.5,48.3,21.4,21.4,26.9,13.1,liters,2.9,37.99,1,synthetic
+SYN-000353,2025-09-06,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Saturday,1,0,0,Cold,5.4,211,205,38.8,38.8,43.2,44.7,23.8,23.8,20.9,7.4,liters,2.4,17.76,1,synthetic
+SYN-000354,2025-09-06,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Saturday,1,0,0,Cold,5.4,211,215,34.3,34.3,38.2,38.4,15.2,15.2,23.2,6.5,liters,2.1,13.65,1,synthetic
+SYN-000355,2025-09-06,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Saturday,1,0,0,Cold,5.4,211,220,38.0,38.0,41.3,40.6,10.4,10.4,30.2,19.8,kg,3.2,63.36,1,synthetic
+SYN-000356,2025-09-06,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Saturday,1,0,0,Cold,5.4,211,200,29.9,29.9,33.5,33.2,10.1,10.1,23.1,14.9,kg,3.6,53.64,1,synthetic
+SYN-000357,2025-09-06,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Saturday,1,0,0,Cold,5.4,211,204,42.3,42.3,47.7,49.1,20.7,20.7,28.4,11.6,kg,2.6,30.16,1,synthetic
+SYN-000358,2025-09-06,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Saturday,1,0,0,Cold,5.4,211,205,38.2,38.2,43.2,42.2,18.7,18.7,23.5,10.6,kg,2.0,21.2,1,synthetic
+SYN-000359,2025-09-06,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Saturday,1,0,0,Cold,5.4,211,218,216.9,216.9,244.8,237.8,93.8,93.8,144.0,32.9,portions,0.6,19.74,1,synthetic
+SYN-000360,2025-09-06,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Saturday,1,0,0,Cold,5.4,211,219,163.3,163.3,184.8,180.2,74.3,74.3,105.9,32.7,portions,0.85,27.8,1,synthetic
+SYN-000361,2025-09-07,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Sunday,1,0,0,Sunny,24.6,463,457,108.5,108.5,118.6,123.1,53.3,53.3,69.8,13.9,kg,1.8,25.02,1,synthetic
+SYN-000362,2025-09-07,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Sunday,1,0,0,Sunny,24.6,463,467,94.4,94.4,105.0,104.3,45.3,45.3,59.0,23.1,kg,2.2,50.82,1,synthetic
+SYN-000363,2025-09-07,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Sunday,1,0,0,Sunny,24.6,463,452,54.6,54.6,59.8,61.4,26.3,26.3,35.1,12.2,kg,3.5,42.7,1,synthetic
+SYN-000364,2025-09-07,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Sunday,1,0,0,Sunny,24.6,463,464,123.4,123.4,139.5,142.4,65.0,65.0,77.4,39.5,kg,6.5,256.75,1,synthetic
+SYN-000365,2025-09-07,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Sunday,1,0,0,Sunny,24.6,463,483,68.2,68.2,77.1,78.2,39.5,39.5,38.7,14.6,kg,3.8,55.48,1,synthetic
+SYN-000366,2025-09-07,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Sunday,1,0,0,Sunny,24.6,463,477,98.2,98.2,107.9,104.8,58.7,58.7,46.1,10.7,kg,8.0,85.6,1,synthetic
+SYN-000367,2025-09-07,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Sunday,1,0,0,Sunny,24.6,463,477,78.0,78.0,88.4,85.9,43.2,43.2,42.7,22.6,liters,2.9,65.54,1,synthetic
+SYN-000368,2025-09-07,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Sunday,1,0,0,Sunny,24.6,463,468,69.3,69.3,77.9,78.3,33.5,33.5,44.8,19.5,liters,2.4,46.8,1,synthetic
+SYN-000369,2025-09-07,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Sunday,1,0,0,Sunny,24.6,463,462,66.1,66.1,71.5,74.1,31.4,31.4,42.7,19.1,liters,2.1,40.11,1,synthetic
+SYN-000370,2025-09-07,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Sunday,1,0,0,Sunny,24.6,463,444,66.4,66.4,75.2,77.5,38.7,38.7,38.8,14.0,kg,3.2,44.8,1,synthetic
+SYN-000371,2025-09-07,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Sunday,1,0,0,Sunny,24.6,463,456,58.8,58.8,66.7,68.6,39.5,39.5,29.1,12.4,kg,3.6,44.64,1,synthetic
+SYN-000372,2025-09-07,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Sunday,1,0,0,Sunny,24.6,463,479,75.1,75.1,82.6,80.7,46.3,46.3,34.4,15.4,kg,2.6,40.04,1,synthetic
+SYN-000373,2025-09-07,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Sunday,1,0,0,Sunny,24.6,463,464,69.8,69.8,75.9,74.2,36.0,36.0,38.2,13.5,kg,2.0,27.0,1,synthetic
+SYN-000374,2025-09-07,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Sunday,1,0,0,Sunny,24.6,463,454,408.0,408.0,455.2,472.5,196.0,196.0,276.5,51.6,portions,0.6,30.96,1,synthetic
+SYN-000375,2025-09-07,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Sunday,1,0,0,Sunny,24.6,463,443,315.9,315.9,358.8,349.2,159.3,159.3,189.9,79.5,portions,0.85,67.58,1,synthetic
+SYN-000376,2025-09-07,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Sunday,1,0,0,Sunny,24.6,294,290,77.7,77.7,85.7,88.7,36.5,36.5,52.2,14.5,kg,1.8,26.1,1,synthetic
+SYN-000377,2025-09-07,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Sunday,1,0,0,Sunny,24.6,294,282,63.8,63.8,72.5,70.7,28.9,28.9,41.8,6.7,kg,2.2,14.74,1,synthetic
+SYN-000378,2025-09-07,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Sunday,1,0,0,Sunny,24.6,294,285,37.7,37.7,41.7,40.8,19.9,19.9,20.9,5.8,kg,3.5,20.3,1,synthetic
+SYN-000379,2025-09-07,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Sunday,1,0,0,Sunny,24.6,294,304,85.5,85.5,95.0,96.0,46.1,46.1,49.9,24.7,kg,6.5,160.55,1,synthetic
+SYN-000380,2025-09-07,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Sunday,1,0,0,Sunny,24.6,294,282,46.3,46.3,50.7,49.6,25.2,25.2,24.4,11.7,kg,3.8,44.46,1,synthetic
+SYN-000381,2025-09-07,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Sunday,1,0,0,Sunny,24.6,294,307,69.7,69.7,77.5,78.3,33.8,33.8,44.5,13.6,kg,8.0,108.8,1,synthetic
+SYN-000382,2025-09-07,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Sunday,1,0,0,Sunny,24.6,294,280,53.8,53.8,58.5,58.1,26.7,26.7,31.4,8.9,liters,2.9,25.81,1,synthetic
+SYN-000383,2025-09-07,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Sunday,1,0,0,Sunny,24.6,294,289,50.2,50.2,54.4,53.4,23.5,23.5,29.9,20.0,liters,2.4,48.0,1,synthetic
+SYN-000384,2025-09-07,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Sunday,1,0,0,Sunny,24.6,294,287,44.6,44.6,50.5,49.8,20.3,20.3,29.5,12.5,liters,2.1,26.25,1,synthetic
+SYN-000385,2025-09-07,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Sunday,1,0,0,Sunny,24.6,294,302,44.4,44.4,50.4,49.3,26.4,26.4,22.9,10.8,kg,3.2,34.56,1,synthetic
+SYN-000386,2025-09-07,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Sunday,1,0,0,Sunny,24.6,294,283,38.8,38.8,42.6,41.6,22.9,22.9,18.7,12.9,kg,3.6,46.44,1,synthetic
+SYN-000387,2025-09-07,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Sunday,1,0,0,Sunny,24.6,294,289,55.0,55.0,62.5,61.5,24.5,24.5,37.0,13.8,kg,2.6,35.88,1,synthetic
+SYN-000388,2025-09-07,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Sunday,1,0,0,Sunny,24.6,294,284,48.1,48.1,53.9,54.5,25.9,25.9,28.6,10.5,kg,2.0,21.0,1,synthetic
+SYN-000389,2025-09-07,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Sunday,1,0,0,Sunny,24.6,294,281,262.2,262.2,291.5,291.7,133.4,133.4,158.3,25.9,portions,0.6,15.54,1,synthetic
+SYN-000390,2025-09-07,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Sunday,1,0,0,Sunny,24.6,294,306,211.5,211.5,240.1,243.3,101.5,101.5,141.8,26.9,portions,0.85,22.86,1,synthetic
+SYN-000391,2025-09-07,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Sunday,1,0,0,Sunny,24.6,277,290,61.4,61.4,70.0,69.9,31.9,31.9,38.0,16.5,kg,1.8,29.7,1,synthetic
+SYN-000392,2025-09-07,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Sunday,1,0,0,Sunny,24.6,277,268,53.0,53.0,59.4,59.8,27.4,27.4,32.4,10.2,kg,2.2,22.44,1,synthetic
+SYN-000393,2025-09-07,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Sunday,1,0,0,Sunny,24.6,277,267,29.9,29.9,33.0,32.4,17.5,17.5,14.9,3.1,kg,3.5,10.85,1,synthetic
+SYN-000394,2025-09-07,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Sunday,1,0,0,Sunny,24.6,277,271,70.5,70.5,76.5,76.2,35.1,35.1,41.1,20.3,kg,6.5,131.95,1,synthetic
+SYN-000395,2025-09-07,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Sunday,1,0,0,Sunny,24.6,277,264,40.9,40.9,46.6,45.8,18.9,18.9,26.9,8.0,kg,3.8,30.4,1,synthetic
+SYN-000396,2025-09-07,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Sunday,1,0,0,Sunny,24.6,277,266,57.2,57.2,62.3,64.7,30.0,30.0,34.7,9.5,kg,8.0,76.0,1,synthetic
+SYN-000397,2025-09-07,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Sunday,1,0,0,Sunny,24.6,277,279,47.1,47.1,51.4,50.0,25.8,25.8,24.2,7.1,liters,2.9,20.59,1,synthetic
+SYN-000398,2025-09-07,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Sunday,1,0,0,Sunny,24.6,277,283,42.7,42.7,46.5,45.6,22.7,22.7,22.9,9.7,liters,2.4,23.28,1,synthetic
+SYN-000399,2025-09-07,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Sunday,1,0,0,Sunny,24.6,277,275,36.9,36.9,40.9,42.2,19.6,19.6,22.6,13.1,liters,2.1,27.51,1,synthetic
+SYN-000400,2025-09-07,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Sunday,1,0,0,Sunny,24.6,277,269,38.7,38.7,41.8,40.7,20.3,20.3,20.4,13.7,kg,3.2,43.84,1,synthetic
+SYN-000401,2025-09-07,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Sunday,1,0,0,Sunny,24.6,277,272,32.4,32.4,36.1,37.3,19.5,19.5,17.8,9.3,kg,3.6,33.48,1,synthetic
+SYN-000402,2025-09-07,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Sunday,1,0,0,Sunny,24.6,277,273,46.3,46.3,50.9,52.7,24.0,24.0,28.7,6.4,kg,2.6,16.64,1,synthetic
+SYN-000403,2025-09-07,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Sunday,1,0,0,Sunny,24.6,277,285,39.6,39.6,44.5,45.2,22.4,22.4,22.8,9.9,kg,2.0,19.8,1,synthetic
+SYN-000404,2025-09-07,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Sunday,1,0,0,Sunny,24.6,277,275,230.9,230.9,260.0,265.4,121.1,121.1,144.3,42.3,portions,0.6,25.38,1,synthetic
+SYN-000405,2025-09-07,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Sunday,1,0,0,Sunny,24.6,277,277,180.2,180.2,203.5,200.3,83.9,83.9,116.4,35.3,portions,0.85,30.0,1,synthetic
+SYN-000406,2025-09-07,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Sunday,1,0,0,Sunny,24.6,215,215,52.6,52.6,59.4,59.9,22.9,22.9,37.0,14.2,kg,1.8,25.56,1,synthetic
+SYN-000407,2025-09-07,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Sunday,1,0,0,Sunny,24.6,215,211,46.0,46.0,50.4,48.9,22.6,22.6,26.3,8.6,kg,2.2,18.92,1,synthetic
+SYN-000408,2025-09-07,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Sunday,1,0,0,Sunny,24.6,215,214,27.6,27.6,30.5,31.7,11.3,11.3,20.4,3.4,kg,3.5,11.9,1,synthetic
+SYN-000409,2025-09-07,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Sunday,1,0,0,Sunny,24.6,215,220,62.4,62.4,70.0,71.8,29.2,29.2,42.6,13.6,kg,6.5,88.4,1,synthetic
+SYN-000410,2025-09-07,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Sunday,1,0,0,Sunny,24.6,215,210,35.3,35.3,38.6,37.9,15.5,15.5,22.4,9.1,kg,3.8,34.58,1,synthetic
+SYN-000411,2025-09-07,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Sunday,1,0,0,Sunny,24.6,215,223,50.4,50.4,54.5,53.3,22.7,22.7,30.6,15.3,kg,8.0,122.4,1,synthetic
+SYN-000412,2025-09-07,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Sunday,1,0,0,Sunny,24.6,215,213,39.4,39.4,44.5,44.3,17.0,17.0,27.3,8.4,liters,2.9,24.36,1,synthetic
+SYN-000413,2025-09-07,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Sunday,1,0,0,Sunny,24.6,215,214,36.3,36.3,40.5,41.1,14.4,14.4,26.7,18.6,liters,2.4,44.64,1,synthetic
+SYN-000414,2025-09-07,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Sunday,1,0,0,Sunny,24.6,215,220,31.1,31.1,35.0,35.0,14.8,14.8,20.2,8.7,liters,2.1,18.27,1,synthetic
+SYN-000415,2025-09-07,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Sunday,1,0,0,Sunny,24.6,215,218,33.4,33.4,37.8,38.3,14.9,14.9,23.4,11.2,kg,3.2,35.84,1,synthetic
+SYN-000416,2025-09-07,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Sunday,1,0,0,Sunny,24.6,215,205,26.6,26.6,30.0,30.6,12.7,12.7,17.9,12.1,kg,3.6,43.56,1,synthetic
+SYN-000417,2025-09-07,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Sunday,1,0,0,Sunny,24.6,215,215,38.7,38.7,42.4,41.8,19.8,19.8,22.0,9.8,kg,2.6,25.48,1,synthetic
+SYN-000418,2025-09-07,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Sunday,1,0,0,Sunny,24.6,215,222,34.9,34.9,38.4,38.5,14.8,14.8,23.7,7.5,kg,2.0,15.0,1,synthetic
+SYN-000419,2025-09-07,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Sunday,1,0,0,Sunny,24.6,215,213,196.3,196.3,216.4,220.9,97.9,97.9,123.0,47.4,portions,0.6,28.44,1,synthetic
+SYN-000420,2025-09-07,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Sunday,1,0,0,Sunny,24.6,215,220,148.5,148.5,168.7,166.1,68.7,68.7,97.4,31.1,portions,0.85,26.44,1,synthetic
+SYN-000421,2025-09-08,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Rainy,16.4,935,970,100.6,100.6,110.4,107.2,143.6,107.2,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000422,2025-09-08,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Rainy,16.4,935,959,87.4,87.4,98.7,98.8,121.3,98.8,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000423,2025-09-08,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Rainy,16.4,935,940,50.6,50.6,57.4,57.8,69.3,57.8,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000424,2025-09-08,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Rainy,16.4,935,907,115.1,115.1,131.1,127.7,142.3,127.7,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000425,2025-09-08,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Rainy,16.4,935,900,64.1,64.1,70.9,71.9,76.7,71.9,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000426,2025-09-08,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Rainy,16.4,935,912,92.6,92.6,104.0,107.0,96.6,96.6,10.4,5.0,kg,8.0,40.0,1,synthetic
+SYN-000427,2025-09-08,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Rainy,16.4,935,919,73.0,73.0,79.0,77.6,82.8,77.6,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000428,2025-09-08,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Rainy,16.4,935,962,64.2,64.2,70.5,71.6,90.3,71.6,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000429,2025-09-08,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Rainy,16.4,935,939,61.2,61.2,69.0,71.1,75.9,71.1,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000430,2025-09-08,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Rainy,16.4,935,941,62.5,62.5,71.1,73.4,57.6,57.6,15.8,11.2,kg,3.2,35.84,1,synthetic
+SYN-000431,2025-09-08,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Rainy,16.4,935,904,56.1,56.1,62.2,63.7,63.0,63.0,0.7,0.3,kg,3.6,1.08,1,synthetic
+SYN-000432,2025-09-08,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Rainy,16.4,935,942,71.0,71.0,78.6,80.5,85.2,80.5,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000433,2025-09-08,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Rainy,16.4,935,913,65.0,65.0,71.5,73.6,81.7,73.6,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000434,2025-09-08,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Rainy,16.4,935,903,377.7,377.7,428.1,430.9,442.4,430.9,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000435,2025-09-08,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Rainy,16.4,935,930,293.5,293.5,333.1,331.0,304.0,304.0,27.0,7.2,portions,0.85,6.12,1,synthetic
+SYN-000436,2025-09-08,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Rainy,16.4,660,683,71.8,71.8,79.4,81.8,93.8,81.8,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000437,2025-09-08,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Rainy,16.4,660,688,58.8,58.8,64.5,65.7,91.1,65.7,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000438,2025-09-08,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Rainy,16.4,660,632,35.2,35.2,39.0,40.3,48.8,40.3,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000439,2025-09-08,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Rainy,16.4,660,677,79.8,79.8,88.0,87.9,95.7,87.9,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000440,2025-09-08,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Rainy,16.4,660,654,43.3,43.3,47.8,47.1,54.6,47.1,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000441,2025-09-08,CAF-NORTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Rainy,16.4,660,651,64.6,64.6,73.5,75.3,77.8,75.3,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000442,2025-09-08,CAF-NORTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Rainy,16.4,660,644,49.9,49.9,54.4,53.1,62.0,53.1,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000443,2025-09-08,CAF-NORTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Rainy,16.4,660,636,46.4,46.4,52.6,53.5,56.5,53.5,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000444,2025-09-08,CAF-NORTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Rainy,16.4,660,659,41.1,41.1,46.8,48.3,62.4,48.3,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000445,2025-09-08,CAF-NORTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Rainy,16.4,660,687,41.8,41.8,46.6,46.0,46.0,46.0,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000446,2025-09-08,CAF-NORTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Rainy,16.4,660,655,36.5,36.5,39.8,40.4,40.3,40.3,0.1,0.1,kg,3.6,0.36,1,synthetic
+SYN-000447,2025-09-08,CAF-NORTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Rainy,16.4,660,682,50.7,50.7,56.2,55.1,56.4,55.1,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000448,2025-09-08,CAF-NORTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Rainy,16.4,660,668,44.9,44.9,49.7,49.3,59.0,49.3,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000449,2025-09-08,CAF-NORTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Rainy,16.4,660,672,243.8,243.8,270.4,273.9,284.1,273.9,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000450,2025-09-08,CAF-NORTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Rainy,16.4,660,656,195.8,195.8,220.2,215.1,256.9,215.1,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000451,2025-09-08,CAF-SOUTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Rainy,16.4,580,583,57.2,57.2,63.3,64.1,89.0,64.1,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000452,2025-09-08,CAF-SOUTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Rainy,16.4,580,585,49.4,49.4,55.2,57.0,72.7,57.0,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000453,2025-09-08,CAF-SOUTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Rainy,16.4,580,604,28.1,28.1,30.6,31.6,40.1,31.6,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000454,2025-09-08,CAF-SOUTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Rainy,16.4,580,580,65.5,65.5,74.4,76.2,70.3,70.3,5.9,3.2,kg,6.5,20.8,1,synthetic
+SYN-000455,2025-09-08,CAF-SOUTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Rainy,16.4,580,573,37.8,37.8,42.8,43.6,44.3,43.6,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000456,2025-09-08,CAF-SOUTH,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Rainy,16.4,580,581,53.3,53.3,59.7,61.6,62.9,61.6,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000457,2025-09-08,CAF-SOUTH,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Rainy,16.4,580,584,44.1,44.1,49.2,47.8,56.7,47.8,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000458,2025-09-08,CAF-SOUTH,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Rainy,16.4,580,551,39.9,39.9,43.2,44.5,62.8,44.5,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000459,2025-09-08,CAF-SOUTH,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Rainy,16.4,580,552,34.4,34.4,38.7,38.6,48.6,38.6,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000460,2025-09-08,CAF-SOUTH,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Rainy,16.4,580,598,36.1,36.1,40.3,40.2,42.4,40.2,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000461,2025-09-08,CAF-SOUTH,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Rainy,16.4,580,580,30.6,30.6,34.4,33.8,36.0,33.8,0.0,0.0,kg,3.6,0.0,1,synthetic
+SYN-000462,2025-09-08,CAF-SOUTH,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Rainy,16.4,580,605,43.1,43.1,47.6,47.9,46.6,46.6,1.3,0.4,kg,2.6,1.04,1,synthetic
+SYN-000463,2025-09-08,CAF-SOUTH,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Rainy,16.4,580,603,37.1,37.1,41.1,42.6,43.8,42.6,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000464,2025-09-08,CAF-SOUTH,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Rainy,16.4,580,589,215.2,215.2,236.9,243.5,288.5,243.5,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000465,2025-09-08,CAF-SOUTH,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Rainy,16.4,580,564,166.4,166.4,187.3,185.9,222.1,185.9,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000466,2025-09-08,CAF-EAST,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Monday,0,0,0,Rainy,16.4,499,488,48.4,48.4,54.8,55.4,65.6,55.4,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000467,2025-09-08,CAF-EAST,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Monday,0,0,0,Rainy,16.4,499,502,42.6,42.6,47.2,48.9,61.6,48.9,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000468,2025-09-08,CAF-EAST,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Monday,0,0,0,Rainy,16.4,499,503,25.3,25.3,28.0,28.6,34.0,28.6,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000469,2025-09-08,CAF-EAST,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Monday,0,0,0,Rainy,16.4,499,495,57.7,57.7,65.7,64.5,64.9,64.5,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000470,2025-09-08,CAF-EAST,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Monday,0,0,0,Rainy,16.4,499,495,32.4,32.4,36.9,36.9,37.2,36.9,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000471,2025-09-08,CAF-EAST,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Monday,0,0,0,Rainy,16.4,499,506,46.4,46.4,52.9,53.5,56.0,53.5,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000472,2025-09-08,CAF-EAST,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Monday,0,0,0,Rainy,16.4,499,515,36.2,36.2,40.1,40.0,44.6,40.0,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000473,2025-09-08,CAF-EAST,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Monday,0,0,0,Rainy,16.4,499,517,33.2,33.2,36.5,36.0,48.4,36.0,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000474,2025-09-08,CAF-EAST,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Monday,0,0,0,Rainy,16.4,499,492,28.8,28.8,32.0,32.1,38.6,32.1,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000475,2025-09-08,CAF-EAST,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Monday,0,0,0,Rainy,16.4,499,517,30.8,30.8,34.3,34.9,36.7,34.9,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000476,2025-09-08,CAF-EAST,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Monday,0,0,0,Rainy,16.4,499,517,24.6,24.6,27.5,26.9,26.7,26.7,0.2,0.1,kg,3.6,0.36,1,synthetic
+SYN-000477,2025-09-08,CAF-EAST,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Monday,0,0,0,Rainy,16.4,499,474,36.0,36.0,40.5,40.5,45.2,40.5,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000478,2025-09-08,CAF-EAST,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Monday,0,0,0,Rainy,16.4,499,520,32.1,32.1,35.2,36.3,40.7,36.3,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000479,2025-09-08,CAF-EAST,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Monday,0,0,0,Rainy,16.4,499,514,182.3,182.3,198.1,201.2,236.7,201.2,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000480,2025-09-08,CAF-EAST,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Monday,0,0,0,Rainy,16.4,499,500,137.1,137.1,149.9,146.8,181.4,146.8,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000481,2025-09-09,CAF-CENTRAL,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Cloudy,21.3,1087,1102,102.8,106.0,111.3,110.3,127.8,110.3,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000482,2025-09-09,CAF-CENTRAL,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Cloudy,21.3,1087,1081,89.3,91.6,100.3,101.0,109.2,101.0,0.0,0.0,kg,2.2,0.0,1,synthetic
+SYN-000483,2025-09-09,CAF-CENTRAL,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Cloudy,21.3,1087,1066,51.8,52.9,56.4,56.8,60.5,56.8,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000484,2025-09-09,CAF-CENTRAL,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Cloudy,21.3,1087,1117,112.3,118.5,124.9,124.5,142.8,124.5,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000485,2025-09-09,CAF-CENTRAL,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Cloudy,21.3,1087,1130,65.3,65.7,72.3,71.8,87.1,71.8,0.0,0.0,kg,3.8,0.0,1,synthetic
+SYN-000486,2025-09-09,CAF-CENTRAL,ITEM-ROAST-BEEF,Slow-Roasted Beef Strips,Proteins,Tuesday,0,0,0,Cloudy,21.3,1087,1118,91.0,93.1,101.4,101.1,109.9,101.1,0.0,0.0,kg,8.0,0.0,1,synthetic
+SYN-000487,2025-09-09,CAF-CENTRAL,ITEM-LENTIL-CURRY,Spiced Yellow Dal Curry,Proteins,Tuesday,0,0,0,Cloudy,21.3,1087,1100,72.4,74.2,80.3,78.5,94.8,78.5,0.0,0.0,liters,2.9,0.0,1,synthetic
+SYN-000488,2025-09-09,CAF-CENTRAL,ITEM-TOMATO-BASIL,Creamy Tomato Basil Soup,Soups,Tuesday,0,0,0,Cloudy,21.3,1087,1092,66.0,67.4,73.6,72.1,79.9,72.1,0.0,0.0,liters,2.4,0.0,1,synthetic
+SYN-000489,2025-09-09,CAF-CENTRAL,ITEM-VEG-MINESTRONE,Tuscan Vegetable Minestrone,Soups,Tuesday,0,0,0,Cloudy,21.3,1087,1058,62.3,63.0,68.4,69.3,73.6,69.3,0.0,0.0,liters,2.1,0.0,1,synthetic
+SYN-000490,2025-09-09,CAF-CENTRAL,ITEM-CAESAR-SALAD,Classic Caesar Salad,Salads,Tuesday,0,0,0,Cloudy,21.3,1087,1041,61.4,61.8,68.3,67.4,72.6,67.4,0.0,0.0,kg,3.2,0.0,1,synthetic
+SYN-000491,2025-09-09,CAF-CENTRAL,ITEM-GREEK-SALAD,Mediterranean Greek Salad,Salads,Tuesday,0,0,0,Cloudy,21.3,1087,1095,57.2,56.9,63.4,65.7,64.3,64.3,1.4,0.9,kg,3.6,3.24,1,synthetic
+SYN-000492,2025-09-09,CAF-CENTRAL,ITEM-ROASTED-BROCCOLI,Garlic Roasted Broccoli,Vegetables,Tuesday,0,0,0,Cloudy,21.3,1087,1109,69.5,72.8,77.9,76.6,88.8,76.6,0.0,0.0,kg,2.6,0.0,1,synthetic
+SYN-000493,2025-09-09,CAF-CENTRAL,ITEM-GLAZED-CARROTS,Honey Glazed Baby Carrots,Vegetables,Tuesday,0,0,0,Cloudy,21.3,1087,1110,64.4,67.0,71.2,72.2,93.1,72.2,0.0,0.0,kg,2.0,0.0,1,synthetic
+SYN-000494,2025-09-09,CAF-CENTRAL,ITEM-DINNER-ROLLS,Artisan Dinner Rolls,Bakery,Tuesday,0,0,0,Cloudy,21.3,1087,1052,374.1,385.8,413.7,430.0,468.0,430.0,0.0,0.0,portions,0.6,0.0,1,synthetic
+SYN-000495,2025-09-09,CAF-CENTRAL,ITEM-FOCACCIA,Rosemary Garlic Focaccia,Bakery,Tuesday,0,0,0,Cloudy,21.3,1087,1063,289.0,294.8,326.8,318.6,352.7,318.6,0.0,0.0,portions,0.85,0.0,1,synthetic
+SYN-000496,2025-09-09,CAF-NORTH,ITEM-JASMINE-RICE,Steamed Jasmine Rice,Grains,Tuesday,0,0,0,Cloudy,21.3,774,787,72.6,74.5,81.8,82.4,102.1,82.4,0.0,0.0,kg,1.8,0.0,1,synthetic
+SYN-000497,2025-09-09,CAF-NORTH,ITEM-PENNE-PASTA,Whole Wheat Penne,Grains,Tuesday,0,0,0,Cloudy,21.3,774,741,62.1,62.8,70.2,70.8,67.2,67.2,3.6,1.4,kg,2.2,3.08,1,synthetic
+SYN-000498,2025-09-09,CAF-NORTH,ITEM-QUINOA-BOWL,Seasoned Quinoa Pilaf,Grains,Tuesday,0,0,0,Cloudy,21.3,774,758,36.9,36.9,40.7,40.6,45.8,40.6,0.0,0.0,kg,3.5,0.0,1,synthetic
+SYN-000499,2025-09-09,CAF-NORTH,ITEM-GRILLED-CHICKEN,Herb Grilled Chicken Breast,Proteins,Tuesday,0,0,0,Cloudy,21.3,774,764,77.9,81.8,86.4,89.5,112.7,89.5,0.0,0.0,kg,6.5,0.0,1,synthetic
+SYN-000500,2025-09-09,CAF-NORTH,ITEM-TOFU-STIRFRY,Marinated Tofu Stirfry,Proteins,Tuesday,0,0,0,Cloudy,21.3,774,788,42.8,44.7,47.6,48.8,62.0,48.8,0.0,0.0,kg,3.8,0.0,1,synthetic
