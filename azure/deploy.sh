@@ -32,13 +32,22 @@ az group create --name "$RESOURCE_GROUP" --location "$LOCATION"
 # 4. Deploy Infrastructure as Code via Bicep
 echo "4. Deploying Bicep template (Free SWA, B1 App Service, Blob Storage)..."
 az deployment group create \
+  --name foodflow-dep \
   --resource-group "$RESOURCE_GROUP" \
   --template-file azure/main.bicep \
   --parameters location="$LOCATION"
 
 # 5. Fetch Provisioned Output URLs
-SWA_HOST=$(az deployment group show --resource-group "$RESOURCE_GROUP" --name main --query properties.outputs.staticWebAppDefaultHostname.value -o tsv)
-API_HOST=$(az deployment group show --resource-group "$RESOURCE_GROUP" --name main --query properties.outputs.apiWebAppDefaultHostname.value -o tsv)
+SWA_HOST=$(az deployment group show --resource-group "$RESOURCE_GROUP" --name foodflow-dep --query properties.outputs.staticWebAppDefaultHostname.value -o tsv)
+API_HOST=$(az deployment group show --resource-group "$RESOURCE_GROUP" --name foodflow-dep --query properties.outputs.apiWebAppDefaultHostname.value -o tsv)
+API_NAME=$(az deployment group show --resource-group "$RESOURCE_GROUP" --name foodflow-dep --query properties.outputs.apiWebAppName.value -o tsv)
+
+# 6. Deploy Backend Code to App Service
+echo "5. Deploying backend code to App Service: $API_NAME..."
+zip -r /tmp/backend_deploy.zip backend requirements.txt data/foodflow.db 2>/dev/null || true
+if [ -f /tmp/backend_deploy.zip ]; then
+  az webapp deploy --resource-group "$RESOURCE_GROUP" --name "$API_NAME" --src-path /tmp/backend_deploy.zip --type zip || echo "Zip deploy failed, connect via GitHub in Azure Portal"
+fi
 
 echo "================================================================="
 echo "FoodFlow Successfully Deployed to Azure!"

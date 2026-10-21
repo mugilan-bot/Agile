@@ -98,5 +98,7 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
 }
 
 output staticWebAppDefaultHostname string = staticWebApp.properties.defaultHostname
+output staticWebAppName string = staticWebApp.name
 output apiWebAppDefaultHostname string = apiWebApp.properties.defaultHostName
+output apiWebAppName string = apiWebApp.name
 output storageAccountName string = storageAccount.name
