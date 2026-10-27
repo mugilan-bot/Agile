@@ -2,8 +2,13 @@ import pytest
 from fastapi.testclient import TestClient
 from backend.app.main import app
 from backend.app.database.session import SessionLocal
+from backend.app.database.init_db import init_db
 from backend.app.services.decision_engine import calculate_preparation_recommendation
 from backend.app.pipeline.local_pipeline import process_uploaded_csv, generate_csv_template
+
+@pytest.fixture(scope="session", autouse=True)
+def initialize_test_database():
+    init_db()
 
 client = TestClient(app)
 
