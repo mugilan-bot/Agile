@@ -302,3 +302,89 @@ class AppSettingItem(BaseModel):
 
 class AppSettingUpdate(BaseModel):
     settings: Dict[str, str]
+
+# Next-Day Diner and Dinner Preparation Schemas
+class NextDayDinerRecommendationResponse(BaseModel):
+    cafeteria_id: str
+    cafeteria_name: str
+    target_date: str
+    day_of_week: str
+    recommended_customer_count: int
+    baseline_historical_avg: float
+    recent_trend_avg: float
+    weather_condition: str
+    temperature_c: float
+    is_weekend: bool
+    is_holiday: bool
+    is_special_event: bool
+    confidence_score: float
+    factors: List[PredictionFactor]
+    explanation: str
+
+class NextDayItemPrepRecommendation(BaseModel):
+    food_item_id: str
+    food_name: str
+    category: str
+    unit: str
+    unit_cost: float
+    predicted_demand: float
+    existing_usable_inventory: float
+    buffer_added_qty: float
+    recommended_prep: float
+    surplus_risk_level: str
+    estimated_prep_cost: float
+    explanation: str
+
+class NextDayPrepPlanResponse(BaseModel):
+    cafeteria_id: str
+    cafeteria_name: str
+    target_date: str
+    day_of_week: str
+    expected_customer_count: int
+    total_predicted_demand: float
+    total_usable_inventory: float
+    total_recommended_prep: float
+    total_estimated_prep_cost: float
+    weather_condition: str
+    temperature_c: float
+    items: List[NextDayItemPrepRecommendation]
+    diner_recommendation: NextDayDinerRecommendationResponse
+    generated_at: str
+
+# Product Flow Audit: Waste, Preparation, and Consumed
+class ProductHistoryRecord(BaseModel):
+    date: str
+    cafeteria_id: str
+    prepared_qty: float
+    consumed_qty: float
+    wasted_qty: float
+    leftover_qty: float
+    waste_cost: float
+
+class ProductWastePrepConsumedItem(BaseModel):
+    food_item_id: str
+    food_name: str
+    category: str
+    unit: str
+    unit_cost: float
+    total_prepared_qty: float
+    total_consumed_qty: float
+    total_wasted_qty: float
+    total_leftover_qty: float
+    total_waste_cost: float
+    consumption_efficiency_pct: float
+    waste_pct: float
+    records_count: int
+    status_level: str
+    recent_history: List[ProductHistoryRecord] = []
+
+class ProductWastePrepConsumedResponse(BaseModel):
+    total_products_count: int
+    total_prepared_qty: float
+    total_consumed_qty: float
+    total_wasted_qty: float
+    total_waste_cost: float
+    overall_consumption_efficiency_pct: float
+    overall_waste_pct: float
+    products: List[ProductWastePrepConsumedItem]
+

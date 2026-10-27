@@ -247,6 +247,9 @@ FoodFlow includes a comprehensive suite of 10 automated integration and unit tes
 - Scikit-Learn Model Prediction & Feature Pipelines
 - Food Preparation Decision Engine Formula Precision
 - Inventory CRUD & Physical Quantity Consistency Audits
+- Next-Day Diner Attendance Recommendation & Multi-Factor Forecast
+- Full-Menu Next-Day Dinner Preparation Scheduling & Inventory Deduction
+- Product Lifecycle Food Flow Audit (Waste, Preparation, Consumption per Product by Name/ID)
 - Redistribution Surplus Matching & Atomic Double-Allocation Prevention
 - CSV Upload Ingestion, Cleaning & Deduplication
 - Model Version Tracking & Governance
@@ -259,19 +262,34 @@ PYTHONPATH=. pytest backend/tests/test_foodflow.py -v
 
 ### Actual Test Results:
 ```text
-backend/tests/test_foodflow.py::test_health_endpoint PASSED              [ 10%]
-backend/tests/test_foodflow.py::test_dashboard_summary PASSED            [ 20%]
-backend/tests/test_foodflow.py::test_cafeterias_and_food_items PASSED    [ 30%]
-backend/tests/test_foodflow.py::test_prediction_endpoint PASSED          [ 40%]
-backend/tests/test_foodflow.py::test_decision_engine_formula PASSED      [ 50%]
-backend/tests/test_foodflow.py::test_decision_engine_excess_inventory PASSED [ 60%]
-backend/tests/test_foodflow.py::test_inventory_crud_and_validation PASSED [ 70%]
-backend/tests/test_foodflow.py::test_redistribution_matching_and_overallocation_prevention PASSED [ 80%]
-backend/tests/test_foodflow.py::test_pipeline_csv_processing PASSED      [ 90%]
-backend/tests/test_foodflow.py::test_ml_metrics_endpoint PASSED          [100%]
+backend/tests/test_foodflow.py::test_health_endpoint PASSED              [  7%]
+backend/tests/test_foodflow.py::test_dashboard_summary PASSED            [ 15%]
+backend/tests/test_foodflow.py::test_cafeterias_and_food_items PASSED    [ 23%]
+backend/tests/test_foodflow.py::test_prediction_endpoint PASSED          [ 30%]
+backend/tests/test_foodflow.py::test_decision_engine_formula PASSED      [ 38%]
+backend/tests/test_foodflow.py::test_decision_engine_excess_inventory PASSED [ 46%]
+backend/tests/test_foodflow.py::test_inventory_crud_and_validation PASSED [ 53%]
+backend/tests/test_foodflow.py::test_redistribution_matching_and_overallocation_prevention PASSED [ 61%]
+backend/tests/test_foodflow.py::test_pipeline_csv_processing PASSED      [ 69%]
+backend/tests/test_foodflow.py::test_ml_metrics_endpoint PASSED          [ 76%]
+backend/tests/test_foodflow.py::test_next_day_diner_recommendation PASSED [ 84%]
+backend/tests/test_foodflow.py::test_next_day_dinner_prep_plan PASSED    [ 92%]
+backend/tests/test_foodflow.py::test_product_waste_prep_consumed_analytics PASSED [100%]
 
-======================= 10 passed in 2.11s ========================
+======================= 13 passed in 2.55s ========================
 ```
+
+---
+
+## 7.1 Next-Day Intelligence & Product Food Flow Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/predict/next-day/diners` | Recommends next-day diner footfall based on day-of-week baselines, trailing momentum, and weather. |
+| `GET` | `/api/predict/next-day/dinners` | Computes full dinner preparation quantities for all products for tomorrow, deducting current stock. |
+| `GET` | `/api/analytics/product-waste-prep-consumed` | Audits total prepared, consumed, and wasted quantities for each product using name or ID. |
+| `GET` | `/api/analytics/product-waste-prep-consumed/{id_or_name}` | Detailed history of daily preparation, consumption, and waste records for a specific product. |
+| `GET` | `/api/reports/export?report_type=product_flow` | Exports complete product waste, preparation, and consumption audit data as CSV or JSON. |
 
 ---
 

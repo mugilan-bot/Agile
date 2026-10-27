@@ -85,10 +85,11 @@ export const ReportsPage: React.FC<ReportsPageProps> = ({ selectedCafeteria }) =
       </div>
 
       {/* Report Selection Tabs */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
         {[
           { id: 'demand', label: 'Daily Demand Forecast', desc: 'Predictive forecasts & diner counts' },
           { id: 'waste', label: 'Food Waste Audit', desc: 'Ingredient losses & root causes' },
+          { id: 'product_flow', label: 'Product Flow Audit', desc: 'Waste, preparation & consumed data' },
           { id: 'inventory', label: 'Kitchen Inventory', desc: 'Active batches & leftovers' },
           { id: 'redistribution', label: 'Surplus Redistribution', desc: 'Donations & recipient logs' },
         ].map((tab) => (

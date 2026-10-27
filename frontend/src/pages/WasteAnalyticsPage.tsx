@@ -29,6 +29,7 @@ import {
 } from 'recharts';
 import { api } from '../services/api';
 import { WasteAnalytics, FoodItem, Cafeteria } from '../types';
+import { ProductWastePrepConsumedAudit } from '../components/ProductWastePrepConsumedAudit';
 
 interface WasteAnalyticsPageProps {
   selectedCafeteria: string;
@@ -271,6 +272,9 @@ export const WasteAnalyticsPage: React.FC<WasteAnalyticsPageProps> = ({ selected
           </div>
         </div>
       )}
+
+      {/* Product Food Flow Audit: Waste, Preparation & Consumption */}
+      <ProductWastePrepConsumedAudit selectedCafeteria={selectedCafeteria} />
 
       {/* Top 8 Food Items by Waste Loss */}
       {data && (

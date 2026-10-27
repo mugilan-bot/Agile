@@ -24,6 +24,7 @@ import {
   PredictionHistoryItem,
   ModelMetrics
 } from '../types';
+import { NextDayDinnerRecommender } from '../components/NextDayDinnerRecommender';
 
 interface DemandForecastPageProps {
   selectedCafeteria: string;
@@ -106,14 +107,68 @@ export const DemandForecastPage: React.FC<DemandForecastPageProps> = ({ selected
     }
   };
 
+  const handleApplyDinersToSimulator = (dinerCount: number, targetDateStr: string) => {
+    setExpectedCustomers(dinerCount);
+    setTargetDate(targetDateStr);
+    const formEl = document.getElementById('simulator-form');
+    if (formEl) {
+      formEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleSimulateItem = (itemId: string, targetDateStr: string, dinerCount: number) => {
+    setFoodItemId(itemId);
+    setTargetDate(targetDateStr);
+    setExpectedCustomers(dinerCount);
+    const formEl = document.getElementById('simulator-form');
+    if (formEl) {
+      formEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleQuickRecommendDiners = async () => {
+    try {
+      const rec = await api.getNextDayDiners({
+        cafeteria_id: cafeteriaId,
+        target_date: targetDate,
+        weather_condition: weatherCondition,
+        temperature_c: temperatureC,
+        is_holiday: isHoliday,
+        is_special_event: isSpecialEvent,
+      });
+      setExpectedCustomers(rec.recommended_customer_count);
+    } catch (err) {
+      console.error('Failed to auto-recommend diners:', err);
+    }
+  };
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Title */}
       <div>
         <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Demand Forecast & Preparation Engine</h1>
         <p className="text-sm text-slate-500 mt-0.5">
           Generate accurate demand predictions using our Scikit-learn Random Forest model, and compute rule-based kitchen prep recommendations.
         </p>
+      </div>
+
+      {/* 1. Next-Day Recommender Hub */}
+      <NextDayDinnerRecommender
+        selectedCafeteria={cafeteriaId}
+        onApplyDinersToSimulator={handleApplyDinersToSimulator}
+        onSimulateItem={handleSimulateItem}
+      />
+
+      <div id="simulator-form" className="pt-4 border-t border-slate-200">
+        <div className="mb-4">
+          <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <Calculator className="w-5 h-5 text-forest-700" />
+            <span>Single-Item Scenario Simulator</span>
+          </h2>
+          <p className="text-xs text-slate-500">
+            Simulate custom weather, attendance spikes, and preparation buffers for an individual menu product.
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -186,7 +241,15 @@ export const DemandForecastPage: React.FC<DemandForecastPageProps> = ({ selected
                     <label htmlFor="form-customer-count" className="text-xs font-semibold text-slate-700">
                       Expected Diners: <span className="text-forest-700 font-bold">{expectedCustomers}</span>
                     </label>
-                    <span className="text-[11px] text-slate-400">Capacity ~1,200</span>
+                    <button
+                      type="button"
+                      onClick={handleQuickRecommendDiners}
+                      className="text-[10px] font-bold text-forest-700 hover:text-forest-900 bg-forest-50 hover:bg-forest-100 px-2 py-0.5 rounded border border-forest-200 inline-flex items-center gap-1 transition-colors"
+                      title="Fetch AI recommended diners for this date"
+                    >
+                      <Sparkles className="w-3 h-3 text-amber-500" />
+                      <span>Auto-Recommend</span>
+                    </button>
                   </div>
                   <input
                     id="form-customer-count"

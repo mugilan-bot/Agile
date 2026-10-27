@@ -185,3 +185,62 @@ def test_ml_metrics_endpoint():
     assert "active_model" in data
     assert data["active_model"]["mae"] > 0
     assert data["active_model"]["r2"] > 0
+
+def test_next_day_diner_recommendation():
+    resp = client.get("/api/predict/next-day/diners?cafeteria_id=CAF-CENTRAL")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["cafeteria_id"] == "CAF-CENTRAL"
+    assert data["recommended_customer_count"] > 100
+    assert len(data["factors"]) > 0
+    assert len(data["explanation"]) > 10
+    assert data["confidence_score"] > 80.0
+
+def test_next_day_dinner_prep_plan():
+    resp = client.get("/api/predict/next-day/dinners?cafeteria_id=CAF-CENTRAL")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["cafeteria_id"] == "CAF-CENTRAL"
+    assert data["expected_customer_count"] > 100
+    assert len(data["items"]) > 0
+    assert data["total_recommended_prep"] > 0
+    first_item = data["items"][0]
+    assert "food_item_id" in first_item
+    assert "recommended_prep" in first_item
+    assert first_item["recommended_prep"] >= 0
+
+def test_product_waste_prep_consumed_analytics():
+    # 1. Full list
+    resp = client.get("/api/analytics/product-waste-prep-consumed")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["total_products_count"] > 0
+    assert data["total_prepared_qty"] > 0
+    assert data["total_consumed_qty"] > 0
+    assert data["total_wasted_qty"] > 0
+
+    # 2. Search by product ID
+    id_resp = client.get("/api/analytics/product-waste-prep-consumed?search=ITEM-DINNER-ROLLS")
+    assert id_resp.status_code == 200
+    id_data = id_resp.json()
+    assert len(id_data["products"]) == 1
+    rolls = id_data["products"][0]
+    assert rolls["food_item_id"] == "ITEM-DINNER-ROLLS"
+    assert rolls["food_name"] == "Artisan Dinner Rolls"
+    assert rolls["total_prepared_qty"] > 0
+    assert rolls["total_consumed_qty"] > 0
+    assert rolls["total_wasted_qty"] > 0
+    assert len(rolls["recent_history"]) > 0
+
+    # 3. Search by product Name
+    name_resp = client.get("/api/analytics/product-waste-prep-consumed?search=Jasmine")
+    assert name_resp.status_code == 200
+    name_data = name_resp.json()
+    assert len(name_data["products"]) >= 1
+    assert "Jasmine" in name_data["products"][0]["food_name"]
+
+    # 4. Single product detail by ID or Name
+    single_resp = client.get("/api/analytics/product-waste-prep-consumed/ITEM-DINNER-ROLLS")
+    assert single_resp.status_code == 200
+    assert single_resp.json()["food_item_id"] == "ITEM-DINNER-ROLLS"
+

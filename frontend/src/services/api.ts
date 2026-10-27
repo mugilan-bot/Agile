@@ -2,7 +2,8 @@ import {
   Cafeteria, FoodItem, InventoryItem, PredictionRequest, PredictionResponse,
   PredictionHistoryItem, WasteAnalytics, RecipientOrganization, SurplusBatch,
   SurplusMatchResponse, RedistributionTransaction, PipelineExecution,
-  ModelMetrics, DashboardSummary
+  ModelMetrics, DashboardSummary, NextDayDinerRecommendation, NextDayPrepPlan,
+  ProductWastePrepConsumedResponse, ProductWastePrepConsumedItem
 } from '../types';
 
 export const API_BASE = ((import.meta as any).env?.VITE_API_URL || '/api').replace(/\/$/, '');
@@ -61,15 +62,75 @@ export const api = {
   deleteInventoryItem: (id: number) =>
     request<{ message: string }>(`/inventory/${id}`, { method: 'DELETE' }),
 
-  // Prediction
+  // Prediction & Next-Day Dinner/Diner Recommender
   predictDemand: (req: PredictionRequest) =>
     request<PredictionResponse>('/predict', { method: 'POST', body: JSON.stringify(req) }),
   getPredictionHistory: () =>
     request<PredictionHistoryItem[]>('/predictions/history'),
+  getNextDayDiners: (params?: {
+    cafeteria_id?: string;
+    target_date?: string;
+    weather_condition?: string;
+    temperature_c?: number;
+    is_holiday?: boolean;
+    is_special_event?: boolean;
+  }) => {
+    const qs = new URLSearchParams();
+    if (params?.cafeteria_id) qs.append('cafeteria_id', params.cafeteria_id);
+    if (params?.target_date) qs.append('target_date', params.target_date);
+    if (params?.weather_condition) qs.append('weather_condition', params.weather_condition);
+    if (params?.temperature_c !== undefined) qs.append('temperature_c', String(params.temperature_c));
+    if (params?.is_holiday !== undefined) qs.append('is_holiday', String(params.is_holiday));
+    if (params?.is_special_event !== undefined) qs.append('is_special_event', String(params.is_special_event));
+    const qsStr = qs.toString();
+    return request<NextDayDinerRecommendation>(`/predict/next-day/diners${qsStr ? `?${qsStr}` : ''}`);
+  },
+  getNextDayDinnerPlan: (params?: {
+    cafeteria_id?: string;
+    target_date?: string;
+    category?: string;
+    weather_condition?: string;
+    temperature_c?: number;
+    is_holiday?: boolean;
+    is_special_event?: boolean;
+    safety_buffer_pct?: number;
+  }) => {
+    const qs = new URLSearchParams();
+    if (params?.cafeteria_id) qs.append('cafeteria_id', params.cafeteria_id);
+    if (params?.target_date) qs.append('target_date', params.target_date);
+    if (params?.category) qs.append('category', params.category);
+    if (params?.weather_condition) qs.append('weather_condition', params.weather_condition);
+    if (params?.temperature_c !== undefined) qs.append('temperature_c', String(params.temperature_c));
+    if (params?.is_holiday !== undefined) qs.append('is_holiday', String(params.is_holiday));
+    if (params?.is_special_event !== undefined) qs.append('is_special_event', String(params.is_special_event));
+    if (params?.safety_buffer_pct !== undefined) qs.append('safety_buffer_pct', String(params.safety_buffer_pct));
+    const qsStr = qs.toString();
+    return request<NextDayPrepPlan>(`/predict/next-day/dinners${qsStr ? `?${qsStr}` : ''}`);
+  },
 
-  // Waste
+  // Waste & Product Food Flow Audit
   getWasteAnalytics: (cafeteriaId?: string) =>
     request<WasteAnalytics>(`/waste/analytics${cafeteriaId ? `?cafeteria_id=${cafeteriaId}` : ''}`),
+  getProductWastePrepConsumed: (params?: {
+    cafeteria_id?: string;
+    search?: string;
+    category?: string;
+    sort_by?: string;
+    sort_order?: string;
+  }) => {
+    const qs = new URLSearchParams();
+    if (params?.cafeteria_id) qs.append('cafeteria_id', params.cafeteria_id);
+    if (params?.search) qs.append('search', params.search);
+    if (params?.category) qs.append('category', params.category);
+    if (params?.sort_by) qs.append('sort_by', params.sort_by);
+    if (params?.sort_order) qs.append('sort_order', params.sort_order);
+    const qsStr = qs.toString();
+    return request<ProductWastePrepConsumedResponse>(`/analytics/product-waste-prep-consumed${qsStr ? `?${qsStr}` : ''}`);
+  },
+  getSingleProductFlow: (productIdOrName: string, cafeteriaId?: string) =>
+    request<ProductWastePrepConsumedItem>(
+      `/analytics/product-waste-prep-consumed/${encodeURIComponent(productIdOrName)}${cafeteriaId ? `?cafeteria_id=${cafeteriaId}` : ''}`
+    ),
   logWasteRecord: (record: {
     cafeteria_id: string;
     food_item_id: string;

@@ -24,9 +24,15 @@ from backend.app.schemas.schemas import (
     RedistributionTransactionResponse,
     PipelineExecutionResponse,
     ModelVersionResponse, RetrainRequest, RetrainResponse,
-    DashboardSummaryResponse, AppSettingUpdate
+    DashboardSummaryResponse, AppSettingUpdate,
+    NextDayDinerRecommendationResponse, NextDayPrepPlanResponse,
+    ProductWastePrepConsumedResponse, ProductWastePrepConsumedItem
 )
-from backend.app.services.prediction_service import predict_food_demand, get_active_model
+from backend.app.services.prediction_service import (
+    predict_food_demand, get_active_model,
+    recommend_next_day_diners, recommend_next_day_dinner_prep,
+    get_product_waste_prep_consumed_summary, get_product_flow_detail
+)
 from backend.app.services.redistribution_service import (
     get_available_surplus_batches, match_recipients_for_surplus, allocate_surplus_transaction
 )
@@ -406,9 +412,106 @@ def get_prediction_history(limit: int = 50, db: Session = Depends(get_db)):
         })
     return out
 
+@router.get("/predict/next-day/diners", response_model=NextDayDinerRecommendationResponse)
+def get_next_day_diner_recommendation(
+    cafeteria_id: str = Query("CAF-CENTRAL"),
+    target_date: Optional[str] = Query(None),
+    weather_condition: str = Query("Sunny"),
+    temperature_c: float = Query(22.0),
+    is_holiday: bool = Query(False),
+    is_special_event: bool = Query(False),
+    db: Session = Depends(get_db)
+):
+    """
+    Recommends the expected diner footfall for the next day based on historical
+    day-of-week attendance distributions, recent velocity, and scenario parameters.
+    """
+    try:
+        return recommend_next_day_diners(
+            db=db,
+            cafeteria_id=cafeteria_id,
+            target_date=target_date,
+            weather_condition=weather_condition,
+            temperature_c=temperature_c,
+            is_holiday=is_holiday,
+            is_special_event=is_special_event,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Diner recommendation error: {str(e)}")
+
+@router.get("/predict/next-day/dinners", response_model=NextDayPrepPlanResponse)
+def get_next_day_dinner_prep_plan(
+    cafeteria_id: str = Query("CAF-CENTRAL"),
+    target_date: Optional[str] = Query(None),
+    category: Optional[str] = Query(None),
+    weather_condition: str = Query("Sunny"),
+    temperature_c: float = Query(22.0),
+    is_holiday: bool = Query(False),
+    is_special_event: bool = Query(False),
+    safety_buffer_pct: Optional[float] = Query(0.10),
+    db: Session = Depends(get_db)
+):
+    """
+    Recommends preparation amounts / portions of dinners for each product for the next day,
+    synthesizing expected diner footfall, ML demand prediction, and usable inventory deduction.
+    """
+    try:
+        return recommend_next_day_dinner_prep(
+            db=db,
+            cafeteria_id=cafeteria_id,
+            target_date=target_date,
+            category=category,
+            weather_condition=weather_condition,
+            temperature_c=temperature_c,
+            is_holiday=is_holiday,
+            is_special_event=is_special_event,
+            safety_buffer_pct=safety_buffer_pct,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Dinner preparation plan error: {str(e)}")
+
 # -------------------------------------------------------------
-# 6. Waste Analytics & Recording
+# 6. Waste Analytics & Product Food Flow Audit
 # -------------------------------------------------------------
+@router.get("/analytics/product-waste-prep-consumed", response_model=ProductWastePrepConsumedResponse)
+def get_product_waste_prep_consumed(
+    cafeteria_id: Optional[str] = None,
+    search: Optional[str] = None,
+    category: Optional[str] = None,
+    sort_by: str = Query("wasted_qty"),
+    sort_order: str = Query("desc"),
+    db: Session = Depends(get_db)
+):
+    """
+    Returns complete waste, preparation, and consumed metrics for each product,
+    supporting search by Product Name or Product ID.
+    """
+    try:
+        return get_product_waste_prep_consumed_summary(
+            db=db,
+            cafeteria_id=cafeteria_id,
+            search=search,
+            category=category,
+            sort_by=sort_by,
+            sort_order=sort_order,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Product analytics error: {str(e)}")
+
+@router.get("/analytics/product-waste-prep-consumed/{product_id_or_name}", response_model=ProductWastePrepConsumedItem)
+def get_single_product_flow(
+    product_id_or_name: str,
+    cafeteria_id: Optional[str] = None,
+    db: Session = Depends(get_db)
+):
+    """
+    Fetches full waste, preparation, and consumption breakdown for a single product using Name or ID.
+    """
+    item = get_product_flow_detail(db, product_id_or_name, cafeteria_id)
+    if not item:
+        raise HTTPException(status_code=404, detail=f"Product '{product_id_or_name}' not found.")
+    return item
+
 @router.get("/waste/analytics")
 def get_waste_analytics(cafeteria_id: Optional[str] = None, db: Session = Depends(get_db)):
     """Computes comprehensive waste analytics, reasons, costs, and timeline trends."""
@@ -639,8 +742,8 @@ def trigger_retraining(req: RetrainRequest, db: Session = Depends(get_db)):
 # -------------------------------------------------------------
 @router.get("/reports/export")
 def export_reports(
-    report_type: str = Query("demand", regex="^(demand|waste|inventory|redistribution)$"),
-    format_type: str = Query("csv", regex="^(csv|json)$"),
+    report_type: str = Query("demand", pattern="^(demand|waste|inventory|redistribution|product_flow)$"),
+    format_type: str = Query("csv", pattern="^(csv|json)$"),
     cafeteria_id: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
@@ -705,6 +808,27 @@ def export_reports(
                 "Match Score": r.match_score,
             }
             for r in records
+        ]
+    elif report_type == "product_flow":
+        summary = get_product_waste_prep_consumed_summary(db=db, cafeteria_id=cafeteria_id)
+        data = [
+            {
+                "Product ID": p.food_item_id,
+                "Product Name": p.food_name,
+                "Category": p.category,
+                "Unit": p.unit,
+                "Unit Cost ($)": p.unit_cost,
+                "Total Prepared": p.total_prepared_qty,
+                "Total Consumed": p.total_consumed_qty,
+                "Total Wasted": p.total_wasted_qty,
+                "Total Leftovers": p.total_leftover_qty,
+                "Consumption Efficiency (%)": p.consumption_efficiency_pct,
+                "Waste Rate (%)": p.waste_pct,
+                "Waste Cost ($)": p.total_waste_cost,
+                "Records Tracked": p.records_count,
+                "Waste Risk Status": p.status_level,
+            }
+            for p in summary.products
         ]
     else:  # inventory
         records = db.query(InventoryItem).order_by(InventoryItem.updated_at.desc()).all()

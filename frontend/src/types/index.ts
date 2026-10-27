@@ -290,3 +290,93 @@ export interface DashboardSummary {
   }>;
   is_synthetic: boolean;
 }
+
+export interface NextDayDinerRecommendation {
+  cafeteria_id: string;
+  cafeteria_name: string;
+  target_date: string;
+  day_of_week: string;
+  recommended_customer_count: number;
+  baseline_historical_avg: number;
+  recent_trend_avg: number;
+  weather_condition: string;
+  temperature_c: number;
+  is_weekend: boolean;
+  is_holiday: boolean;
+  is_special_event: boolean;
+  confidence_score: number;
+  factors: PredictionFactor[];
+  explanation: string;
+}
+
+export interface NextDayItemPrepRecommendation {
+  food_item_id: string;
+  food_name: string;
+  category: string;
+  unit: string;
+  unit_cost: number;
+  predicted_demand: number;
+  existing_usable_inventory: number;
+  buffer_added_qty: number;
+  recommended_prep: number;
+  surplus_risk_level: 'low' | 'medium' | 'high';
+  estimated_prep_cost: number;
+  explanation: string;
+}
+
+export interface NextDayPrepPlan {
+  cafeteria_id: string;
+  cafeteria_name: string;
+  target_date: string;
+  day_of_week: string;
+  expected_customer_count: number;
+  total_predicted_demand: number;
+  total_usable_inventory: number;
+  total_recommended_prep: number;
+  total_estimated_prep_cost: number;
+  weather_condition: string;
+  temperature_c: number;
+  items: NextDayItemPrepRecommendation[];
+  diner_recommendation: NextDayDinerRecommendation;
+  generated_at: string;
+}
+
+export interface ProductHistoryRecord {
+  date: string;
+  cafeteria_id: string;
+  prepared_qty: number;
+  consumed_qty: number;
+  wasted_qty: number;
+  leftover_qty: number;
+  waste_cost: number;
+}
+
+export interface ProductWastePrepConsumedItem {
+  food_item_id: string;
+  food_name: string;
+  category: string;
+  unit: string;
+  unit_cost: number;
+  total_prepared_qty: number;
+  total_consumed_qty: number;
+  total_wasted_qty: number;
+  total_leftover_qty: number;
+  total_waste_cost: number;
+  consumption_efficiency_pct: number;
+  waste_pct: number;
+  records_count: number;
+  status_level: 'optimal' | 'moderate_waste' | 'high_waste';
+  recent_history: ProductHistoryRecord[];
+}
+
+export interface ProductWastePrepConsumedResponse {
+  total_products_count: number;
+  total_prepared_qty: number;
+  total_consumed_qty: number;
+  total_wasted_qty: number;
+  total_waste_cost: number;
+  overall_consumption_efficiency_pct: number;
+  overall_waste_pct: number;
+  products: ProductWastePrepConsumedItem[];
+}
+

@@ -31,8 +31,9 @@ import {
   Cell,
   CartesianGrid
 } from 'recharts';
+import { Link } from 'react-router-dom';
 import { api } from '../services/api';
-import { DashboardSummary } from '../types';
+import { DashboardSummary, NextDayDinerRecommendation, NextDayPrepPlan } from '../types';
 
 interface DashboardPageProps {
   selectedCafeteria: string;
@@ -42,6 +43,8 @@ const CATEGORY_COLORS = ['#15803d', '#059669', '#0284c7', '#d97706', '#dc2626', 
 
 export const DashboardPage: React.FC<DashboardPageProps> = ({ selectedCafeteria }) => {
   const [data, setData] = useState<DashboardSummary | null>(null);
+  const [nextDayDiners, setNextDayDiners] = useState<NextDayDinerRecommendation | null>(null);
+  const [nextDayPlan, setNextDayPlan] = useState<NextDayPrepPlan | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -57,6 +60,14 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ selectedCafeteria 
         setError(err.message || 'Failed to load dashboard data');
       })
       .finally(() => setLoading(false));
+
+    api.getNextDayDiners({ cafeteria_id: selectedCafeteria })
+      .then(setNextDayDiners)
+      .catch((err) => console.error('Failed to load next-day diners for dashboard:', err));
+
+    api.getNextDayDinnerPlan({ cafeteria_id: selectedCafeteria })
+      .then(setNextDayPlan)
+      .catch((err) => console.error('Failed to load next-day dinner plan for dashboard:', err));
   }, [selectedCafeteria]);
 
   if (loading && !data) {
@@ -128,6 +139,52 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ selectedCafeteria 
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Next Day Diner & Dinner Recommender Card */}
+      {nextDayDiners && (
+        <div className="card bg-gradient-to-r from-forest-800 to-forest-900 text-white p-5 sm:p-6 shadow-soft-md border-forest-700">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+            <div className="space-y-1">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Next-Day Dining Intelligence</span>
+              </div>
+              <h3 className="text-lg font-bold text-white">
+                Tomorrow's Recommended Diners & Dinner Preparation ({nextDayDiners.day_of_week}, {nextDayDiners.target_date})
+              </h3>
+              <p className="text-xs text-emerald-100/80 max-w-2xl leading-relaxed">
+                {nextDayDiners.explanation}
+              </p>
+            </div>
+
+            <div className="flex items-center gap-4 self-start lg:self-auto">
+              <div className="bg-white/10 px-3 py-2 rounded-xl text-center">
+                <span className="text-[10px] uppercase font-bold text-emerald-300 block">Expected Diners</span>
+                <span className="text-2xl font-extrabold text-white">
+                  {nextDayDiners.recommended_customer_count.toLocaleString()}
+                </span>
+              </div>
+
+              {nextDayPlan && (
+                <div className="bg-white/10 px-3 py-2 rounded-xl text-center">
+                  <span className="text-[10px] uppercase font-bold text-emerald-300 block">Dinners to Prep</span>
+                  <span className="text-2xl font-extrabold text-emerald-300">
+                    {nextDayPlan.total_recommended_prep.toLocaleString()}
+                  </span>
+                </div>
+              )}
+
+              <Link
+                to="/forecast"
+                className="px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl text-xs transition-colors flex items-center gap-1.5 whitespace-nowrap shadow-soft-sm"
+              >
+                <span>View Full Schedule</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
         </div>
       )}
 
